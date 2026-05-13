@@ -201,12 +201,8 @@
     }
 
     .section-title {
-      display: flex;
-      align-items: flex-end;
-      justify-content: space-between;
-      gap: 20px;
-      flex-wrap: wrap;
-      margin-bottom: 16px;
+      display: block;
+      margin-bottom: 18px;
     }
 
     .section-title h2 {
@@ -218,10 +214,10 @@
     }
 
     .section-title p {
-      max-width: 620px;
+      max-width: 680px;
       color: var(--muted);
-      margin: 0;
-      font-size: 17px;
+      margin: 10px 0 0;
+      font-size: 18px;
     }
 
     .feature-grid {
@@ -239,8 +235,8 @@
     }
 
     .feature .icon {
-      width: 44px;
-      height: 44px;
+      width: 46px;
+      height: 46px;
       display: grid;
       place-items: center;
       border-radius: 16px;
@@ -249,6 +245,19 @@
       font-size: 24px;
       margin-bottom: 14px;
       border: 2px solid var(--blue);
+      position: relative;
+    }
+
+    .feature .icon::after {
+      content: "";
+      position: absolute;
+      right: -3px;
+      bottom: -3px;
+      width: 13px;
+      height: 13px;
+      border-radius: 999px;
+      background: var(--orange);
+      border: 3px solid #ffffff;
     }
 
     .feature h3 {
