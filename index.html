@@ -8,14 +8,15 @@
   <style>
     :root {
       color-scheme: light;
-      --ink: #172033;
-      --muted: #5d6678;
-      --line: #e7eaf0;
-      --bg: #f6f8fc;
-      --card: #ffffff;
+      --navy: #051b49;
+      --blue: #0646a7;
+      --blue-bright: #0b66ff;
       --orange: #ff7a00;
-      --blue: #174ea6;
-      --blue2: #2563eb;
+      --ink: #101828;
+      --muted: #5b667a;
+      --line: #dfe7f2;
+      --bg: #f5f8fc;
+      --card: #ffffff;
       --soft-blue: #eaf3ff;
       --soft-orange: #fff3e8;
     }
@@ -27,19 +28,19 @@
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
       color: var(--ink);
       background:
-        radial-gradient(circle at top left, #eaf3ff 0, rgba(234, 243, 255, 0) 34rem),
-        radial-gradient(circle at top right, #fff1e4 0, rgba(255, 241, 228, 0) 30rem),
+        radial-gradient(circle at top left, rgba(11, 102, 255, 0.12), rgba(11, 102, 255, 0) 32rem),
+        radial-gradient(circle at top right, rgba(255, 122, 0, 0.12), rgba(255, 122, 0, 0) 30rem),
         var(--bg);
       line-height: 1.55;
     }
 
     .wrap {
-      width: min(1060px, calc(100% - 32px));
+      width: min(1120px, calc(100% - 32px));
       margin: 0 auto;
     }
 
     header {
-      padding: 34px 0 18px;
+      padding: 30px 0 16px;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -48,108 +49,109 @@
     }
 
     .brand {
-      font-size: clamp(30px, 5vw, 54px);
-      line-height: 1;
-      font-weight: 900;
-      letter-spacing: -0.055em;
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
       color: var(--blue);
       text-decoration: none;
+      font-size: clamp(30px, 4.4vw, 54px);
+      line-height: 1;
+      font-weight: 950;
+      letter-spacing: -0.06em;
     }
 
-    .brand span {
+    .brand img {
+      width: 54px;
+      height: 54px;
+      border-radius: 16px;
+      box-shadow: 0 10px 24px rgba(6, 70, 167, 0.22);
+    }
+
+    .brand span span {
       color: var(--orange);
       margin-left: 6px;
     }
 
     nav {
       display: flex;
-      gap: 14px;
+      gap: 16px;
       flex-wrap: wrap;
       align-items: center;
     }
 
     nav a,
     footer a {
-      color: var(--blue2);
+      color: var(--blue-bright);
       text-decoration: none;
-      font-weight: 750;
+      font-weight: 800;
     }
 
     .hero {
-      margin-top: 26px;
-      background: rgba(255, 255, 255, 0.86);
-      border: 1px solid var(--line);
-      border-radius: 32px;
-      padding: clamp(26px, 5vw, 56px);
-      box-shadow: 0 20px 60px rgba(23, 32, 51, 0.08);
+      margin-top: 24px;
+      background: linear-gradient(135deg, #062b73 0%, #041a47 62%, #031335 100%);
+      color: white;
+      border-radius: 34px;
+      padding: clamp(28px, 5vw, 58px);
+      box-shadow: 0 24px 70px rgba(5, 27, 73, 0.26);
       overflow: hidden;
       position: relative;
+      display: grid;
+      grid-template-columns: minmax(0, 1.1fr) minmax(280px, 0.9fr);
+      gap: clamp(26px, 4vw, 52px);
+      align-items: center;
     }
 
     .hero::after {
       content: "";
       position: absolute;
-      right: -90px;
-      top: -90px;
-      width: 250px;
-      height: 250px;
-      background: linear-gradient(135deg, rgba(255, 122, 0, 0.20), rgba(37, 99, 235, 0.12));
-      border-radius: 999px;
-      pointer-events: none;
+      right: -130px;
+      bottom: -160px;
+      width: 420px;
+      height: 420px;
+      border: 1px solid rgba(255,255,255,0.16);
+      border-radius: 50%;
+      box-shadow:
+        -34px -34px 0 rgba(255,255,255,0.035),
+        -68px -68px 0 rgba(255,255,255,0.025),
+        -102px -102px 0 rgba(255,255,255,0.018);
     }
 
-    .hero-split {
-      display: grid;
-      grid-template-columns: minmax(0, 1.35fr) minmax(220px, 0.65fr);
-      align-items: center;
-      gap: clamp(22px, 4vw, 46px);
-    }
-
-    .hero-copy {
+    .hero-copy,
+    .hero-media {
       position: relative;
       z-index: 1;
-    }
-
-    .hero-art {
-      position: relative;
-      z-index: 1;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .hero-art img {
-      width: min(260px, 100%);
-      border-radius: 28%;
-      box-shadow: 0 28px 60px rgba(23, 78, 166, 0.25);
     }
 
     .badge {
       display: inline-flex;
       align-items: center;
       gap: 8px;
-      border: 1px solid #ffd0a3;
-      background: var(--soft-orange);
-      color: #9a4a00;
+      background: rgba(255, 122, 0, 0.14);
+      border: 1px solid rgba(255, 122, 0, 0.58);
+      color: #ffd9b0;
       border-radius: 999px;
       padding: 8px 13px;
-      font-weight: 850;
+      font-weight: 900;
       font-size: 14px;
       margin-bottom: 18px;
     }
 
     h1 {
-      max-width: 780px;
-      font-size: clamp(38px, 7vw, 76px);
+      max-width: 760px;
+      font-size: clamp(42px, 7vw, 78px);
       line-height: 0.96;
       margin: 0;
       letter-spacing: -0.065em;
     }
 
+    h1 .orange {
+      color: var(--orange);
+    }
+
     .lead {
-      max-width: 760px;
-      font-size: clamp(19px, 2.4vw, 25px);
-      color: var(--muted);
+      max-width: 730px;
+      font-size: clamp(18px, 2.2vw, 24px);
+      color: rgba(255,255,255,0.82);
       margin: 22px 0 0;
     }
 
@@ -167,74 +169,130 @@
       min-height: 46px;
       padding: 12px 18px;
       border-radius: 14px;
-      font-weight: 850;
+      font-weight: 900;
       text-decoration: none;
     }
 
     .button.primary {
       background: var(--orange);
       color: white;
-      box-shadow: 0 10px 24px rgba(255, 122, 0, 0.22);
+      box-shadow: 0 10px 24px rgba(255, 122, 0, 0.25);
     }
 
     .button.secondary {
-      background: var(--soft-blue);
-      color: var(--blue);
-      border: 1px solid #cfe2ff;
+      background: rgba(255,255,255,0.12);
+      color: white;
+      border: 1px solid rgba(255,255,255,0.24);
+    }
+
+    .hero-media {
+      display: grid;
+      place-items: center;
+    }
+
+    .app-icon {
+      width: min(300px, 72vw);
+      border-radius: 28%;
+      box-shadow: 0 28px 70px rgba(0,0,0,0.28);
+      transform: rotate(-2deg);
     }
 
     .section {
-      margin-top: 22px;
+      margin-top: 30px;
     }
 
-    .grid {
+    .section-title {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-bottom: 16px;
+    }
+
+    .section-title h2 {
+      margin: 0;
+      font-size: clamp(28px, 4vw, 42px);
+      line-height: 1.05;
+      letter-spacing: -0.04em;
+      color: var(--navy);
+    }
+
+    .section-title p {
+      max-width: 620px;
+      color: var(--muted);
+      margin: 0;
+      font-size: 17px;
+    }
+
+    .feature-grid {
       display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 16px;
-      margin-top: 22px;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
     }
 
-    .tile {
+    .feature {
       background: var(--card);
       border: 1px solid var(--line);
       border-radius: 22px;
-      padding: 22px;
-      min-height: 170px;
-      box-shadow: 0 10px 34px rgba(23, 32, 51, 0.045);
+      padding: 20px;
+      box-shadow: 0 12px 32px rgba(5, 27, 73, 0.055);
     }
 
-    .icon {
-      width: 42px;
-      height: 42px;
+    .feature .icon {
+      width: 44px;
+      height: 44px;
       display: grid;
       place-items: center;
-      border-radius: 14px;
-      background: var(--soft-orange);
-      color: var(--orange);
+      border-radius: 16px;
+      background: var(--soft-blue);
+      color: var(--blue);
       font-size: 22px;
       margin-bottom: 14px;
+      border: 1px solid #cfe0ff;
     }
 
-    .tile h2 {
-      font-size: 20px;
-      line-height: 1.18;
+    .feature h3 {
       margin: 0 0 8px;
-      letter-spacing: -0.02em;
+      color: var(--blue);
+      font-size: 18px;
+      line-height: 1.15;
     }
 
-    .tile p {
-      font-size: 16px;
-      color: var(--muted);
+    .feature p {
       margin: 0;
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .screens {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .screen-card {
+      background: #061b48;
+      border-radius: 24px;
+      padding: 10px;
+      box-shadow: 0 16px 44px rgba(5, 27, 73, 0.16);
+      border: 1px solid rgba(6, 70, 167, 0.14);
+    }
+
+    .screen-card img {
+      display: block;
+      width: 100%;
+      border-radius: 16px;
     }
 
     .notice {
-      margin-top: 18px;
+      margin-top: 22px;
       border-left: 5px solid var(--orange);
       background: #fff7ed;
       border-radius: 18px;
       padding: 18px 20px;
       color: var(--muted);
+      font-size: 16px;
     }
 
     .notice strong {
@@ -254,29 +312,34 @@
       margin: 10px 0;
     }
 
-    @media (max-width: 780px) {
-      header {
-        align-items: flex-start;
-      }
-
-      .grid {
-        grid-template-columns: 1fr;
-      }
-
+    @media (max-width: 940px) {
       .hero {
-        border-radius: 24px;
-      }
-
-      .hero-split {
         grid-template-columns: 1fr;
       }
 
-      .hero-art {
+      .hero-media {
         justify-content: flex-start;
       }
 
-      .hero-art img {
-        width: min(180px, 70vw);
+      .app-icon {
+        width: min(190px, 64vw);
+      }
+
+      .feature-grid,
+      .screens {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 560px) {
+      .feature-grid,
+      .screens {
+        grid-template-columns: 1fr;
+      }
+
+      .brand img {
+        width: 46px;
+        height: 46px;
       }
     }
   </style>
@@ -284,7 +347,10 @@
 <body>
   <div class="wrap">
     <header>
-      <a class="brand" href="/" aria-label="CardFinder Live home">CardFinder<span>Live</span></a>
+      <a class="brand" href="/" aria-label="CardFinder Live home">
+        <img src="/assets/app-icon.png" alt="" />
+        <span>CardFinder<span>Live</span></span>
+      </a>
       <nav aria-label="Primary navigation">
         <a href="/">Home</a>
         <a href="/privacy">Privacy</a>
@@ -294,10 +360,10 @@
     </header>
 
     <main>
-      <section class="hero hero-split">
+      <section class="hero">
         <div class="hero-copy">
           <div class="badge">Launching on iPhone</div>
-          <h1>Find cards. Find shows. Make real-world deals.</h1>
+          <h1>Find cards. Find shows. <span class="orange">Make real-world deals.</span></h1>
           <p class="lead">
             CardFinder Live helps collectors find cards, discover card shows,
             message sellers, and coordinate real-world deals with real people.
@@ -307,31 +373,56 @@
             <a class="button secondary" href="/privacy">Privacy Policy</a>
           </div>
         </div>
-
-        <div class="hero-art" aria-label="CardFinder Live app icon">
-          <img src="/assets/app-icon.png" alt="CardFinder Live app icon" />
+        <div class="hero-media" aria-label="CardFinder Live app icon">
+          <img class="app-icon" src="/assets/app-icon.png" alt="CardFinder Live app icon" />
         </div>
       </section>
 
-      <section class="section" aria-label="CardFinder Live features">
-        <div class="grid">
-          <article class="tile">
+      <section class="section">
+        <div class="section-title">
+          <h2>Built for collectors.</h2>
+          <p>Find cards, follow shows, message sellers, and manage your collection visibility from one app.</p>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature">
             <div class="icon">⌕</div>
-            <h2>Find Cards</h2>
+            <h3>Find Cards</h3>
             <p>Discover cards nearby, in your state, or nationwide.</p>
           </article>
-
-          <article class="tile">
+          <article class="feature">
             <div class="icon">★</div>
-            <h2>Find Shows</h2>
-            <p>Browse card shows, save events, and plan where to go next.</p>
+            <h3>Find Shows</h3>
+            <p>Browse and save card shows and live events.</p>
           </article>
-
-          <article class="tile">
+          <article class="feature">
+            <div class="icon">●</div>
+            <h3>Go Live</h3>
+            <p>Make selected cards discoverable at card shows.</p>
+          </article>
+          <article class="feature">
             <div class="icon">↔</div>
-            <h2>Message Sellers</h2>
-            <p>Connect when interest is real and coordinate safer deals.</p>
+            <h3>Message Sellers</h3>
+            <p>Connect when interest is real and coordinate safely.</p>
           </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-title">
+          <h2>See the app.</h2>
+          <p>The launch experience is designed around card discovery, live shows, messaging, and collection control.</p>
+        </div>
+
+        <div class="screens">
+          <div class="screen-card"><img src="/assets/screenshots/01_finder.png" alt="CardFinder Live Finder screen" /></div>
+          <div class="screen-card"><img src="/assets/screenshots/02_cardshow_map.png" alt="Card show map screen" /></div>
+          <div class="screen-card"><img src="/assets/screenshots/03_show_details.png" alt="Card show details screen" /></div>
+          <div class="screen-card"><img src="/assets/screenshots/04_go_live.png" alt="Go live at a card show screen" /></div>
+          <div class="screen-card"><img src="/assets/screenshots/05_live_cards.png" alt="Live cards at a show screen" /></div>
+          <div class="screen-card"><img src="/assets/screenshots/06_card_detail.png" alt="Card detail and seller contact screen" /></div>
+          <div class="screen-card"><img src="/assets/screenshots/07_messages.png" alt="Messages screen" /></div>
+          <div class="screen-card"><img src="/assets/screenshots/08_collection.png" alt="Collection visibility screen" /></div>
         </div>
 
         <div class="notice">
