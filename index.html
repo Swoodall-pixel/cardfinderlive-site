@@ -98,6 +98,32 @@
       pointer-events: none;
     }
 
+    .hero-split {
+      display: grid;
+      grid-template-columns: minmax(0, 1.35fr) minmax(220px, 0.65fr);
+      align-items: center;
+      gap: clamp(22px, 4vw, 46px);
+    }
+
+    .hero-copy {
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-art {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .hero-art img {
+      width: min(260px, 100%);
+      border-radius: 28%;
+      box-shadow: 0 28px 60px rgba(23, 78, 166, 0.25);
+    }
+
     .badge {
       display: inline-flex;
       align-items: center;
@@ -240,6 +266,18 @@
       .hero {
         border-radius: 24px;
       }
+
+      .hero-split {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-art {
+        justify-content: flex-start;
+      }
+
+      .hero-art img {
+        width: min(180px, 70vw);
+      }
     }
   </style>
 </head>
@@ -256,16 +294,22 @@
     </header>
 
     <main>
-      <section class="hero">
-        <div class="badge">Launching on iPhone</div>
-        <h1>Find cards where the hobby is happening.</h1>
-        <p class="lead">
-          CardFinder Live helps sports card collectors discover cards, card shows,
-          card shops, and nearby sellers.
-        </p>
-        <div class="actions">
-          <a class="button primary" href="/support">Contact Support</a>
-          <a class="button secondary" href="/privacy">Privacy Policy</a>
+      <section class="hero hero-split">
+        <div class="hero-copy">
+          <div class="badge">Launching on iPhone</div>
+          <h1>Find cards. Find shows. Make real-world deals.</h1>
+          <p class="lead">
+            CardFinder Live helps collectors find cards, discover card shows,
+            message sellers, and coordinate real-world deals with real people.
+          </p>
+          <div class="actions">
+            <a class="button primary" href="/support">Contact Support</a>
+            <a class="button secondary" href="/privacy">Privacy Policy</a>
+          </div>
+        </div>
+
+        <div class="hero-art" aria-label="CardFinder Live app icon">
+          <img src="/assets/app-icon.png" alt="CardFinder Live app icon" />
         </div>
       </section>
 
@@ -273,20 +317,20 @@
         <div class="grid">
           <article class="tile">
             <div class="icon">⌕</div>
-            <h2>Find cards near you or nationwide</h2>
-            <p>Browse cards from collectors, sellers, shops, and live card shows.</p>
+            <h2>Find Cards</h2>
+            <p>Discover cards nearby, in your state, or nationwide.</p>
           </article>
 
           <article class="tile">
             <div class="icon">★</div>
-            <h2>Make the card show searchable</h2>
-            <p>See what cards are available before walking every aisle.</p>
+            <h2>Find Shows</h2>
+            <p>Browse card shows, save events, and plan where to go next.</p>
           </article>
 
           <article class="tile">
             <div class="icon">↔</div>
-            <h2>Coordinate real-world deals</h2>
-            <p>Save searches, watch cards, message sellers, and plan safe meetups.</p>
+            <h2>Message Sellers</h2>
+            <p>Connect when interest is real and coordinate safer deals.</p>
           </article>
         </div>
 
