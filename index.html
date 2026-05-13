@@ -60,13 +60,6 @@
       letter-spacing: -0.06em;
     }
 
-    .brand img {
-      width: 54px;
-      height: 54px;
-      border-radius: 16px;
-      box-shadow: 0 10px 24px rgba(6, 70, 167, 0.22);
-    }
-
     .brand span span {
       color: var(--orange);
       margin-left: 6px;
@@ -126,9 +119,9 @@
       display: inline-flex;
       align-items: center;
       gap: 8px;
-      background: rgba(255, 122, 0, 0.14);
-      border: 1px solid rgba(255, 122, 0, 0.58);
-      color: #ffd9b0;
+      background: rgba(255, 255, 255, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.34);
+      color: #ffffff;
       border-radius: 999px;
       padding: 8px 13px;
       font-weight: 900;
@@ -146,6 +139,12 @@
 
     h1 .orange {
       color: var(--orange);
+      white-space: normal;
+    }
+
+    h1 .phrase {
+      display: inline-block;
+      margin-right: 0.18em;
     }
 
     .lead {
@@ -191,10 +190,10 @@
     }
 
     .app-icon {
-      width: min(300px, 72vw);
+      width: min(260px, 68vw);
       border-radius: 28%;
       box-shadow: 0 28px 70px rgba(0,0,0,0.28);
-      transform: rotate(-2deg);
+      transform: rotate(0deg);
     }
 
     .section {
@@ -227,7 +226,7 @@
 
     .feature-grid {
       display: grid;
-      grid-template-columns: repeat(4, minmax(0, 1fr));
+      grid-template-columns: repeat(3, minmax(0, 1fr));
       gap: 14px;
     }
 
@@ -245,11 +244,11 @@
       display: grid;
       place-items: center;
       border-radius: 16px;
-      background: var(--soft-blue);
+      background: #ffffff;
       color: var(--blue);
-      font-size: 22px;
+      font-size: 24px;
       margin-bottom: 14px;
-      border: 1px solid #cfe0ff;
+      border: 2px solid var(--blue);
     }
 
     .feature h3 {
@@ -267,14 +266,14 @@
 
     .screens {
       display: grid;
-      grid-template-columns: repeat(4, minmax(0, 1fr));
-      gap: 16px;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 22px;
     }
 
     .screen-card {
       background: #061b48;
-      border-radius: 24px;
-      padding: 10px;
+      border-radius: 28px;
+      padding: 14px;
       box-shadow: 0 16px 44px rgba(5, 27, 73, 0.16);
       border: 1px solid rgba(6, 70, 167, 0.14);
     }
@@ -325,9 +324,12 @@
         width: min(190px, 64vw);
       }
 
-      .feature-grid,
-      .screens {
+      .feature-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .screens {
+        grid-template-columns: 1fr;
       }
     }
 
@@ -337,10 +339,6 @@
         grid-template-columns: 1fr;
       }
 
-      .brand img {
-        width: 46px;
-        height: 46px;
-      }
     }
   </style>
 </head>
@@ -348,7 +346,6 @@
   <div class="wrap">
     <header>
       <a class="brand" href="/" aria-label="CardFinder Live home">
-        <img src="/assets/app-icon.png" alt="" />
         <span>CardFinder<span>Live</span></span>
       </a>
       <nav aria-label="Primary navigation">
@@ -363,15 +360,11 @@
       <section class="hero">
         <div class="hero-copy">
           <div class="badge">Launching on iPhone</div>
-          <h1>Find cards. Find shows. <span class="orange">Make real-world deals.</span></h1>
+          <h1><span class="phrase">Find cards.</span> <span class="phrase">Find shows.</span> <span class="orange">Make real-world deals.</span></h1>
           <p class="lead">
             CardFinder Live helps collectors find cards, discover card shows,
             message sellers, and coordinate real-world deals with real people.
           </p>
-          <div class="actions">
-            <a class="button primary" href="/support">Contact Support</a>
-            <a class="button secondary" href="/privacy">Privacy Policy</a>
-          </div>
         </div>
         <div class="hero-media" aria-label="CardFinder Live app icon">
           <img class="app-icon" src="/assets/app-icon.png" alt="CardFinder Live app icon" />
@@ -405,6 +398,16 @@
             <h3>Message Sellers</h3>
             <p>Connect when interest is real and coordinate safely.</p>
           </article>
+          <article class="feature">
+            <div class="icon">▣</div>
+            <h3>Collections</h3>
+            <p>Control what buyers can discover from your collection.</p>
+          </article>
+          <article class="feature">
+            <div class="icon">◆</div>
+            <h3>Passes</h3>
+            <p>Unlock dealmaking with membership and access options.</p>
+          </article>
         </div>
       </section>
 
@@ -425,10 +428,6 @@
           <div class="screen-card"><img src="/assets/screenshots/08_collection.png" alt="Collection visibility screen" /></div>
         </div>
 
-        <div class="notice">
-          <strong>CardFinder Live does not process per-card marketplace checkout in the app.</strong>
-          Collectors message, plan, and meet in person to complete deals.
-        </div>
       </section>
     </main>
 
