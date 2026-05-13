@@ -179,6 +179,11 @@
       box-shadow: 0 10px 24px rgba(255, 122, 0, 0.25);
     }
 
+    .button.disabled {
+      cursor: default;
+      user-select: none;
+    }
+
     .button.secondary {
       background: rgba(255,255,255,0.12);
       color: white;
@@ -375,6 +380,9 @@
             CardFinder Live helps collectors find cards, discover card shows,
             message sellers, and coordinate real-world deals with real people.
           </p>
+          <div class="actions">
+            <span class="button primary disabled" aria-disabled="true">Coming soon to the App Store</span>
+          </div>
         </div>
         <div class="hero-media" aria-label="CardFinder Live app icon">
           <img class="app-icon" src="/assets/app-icon.png" alt="CardFinder Live app icon" />
