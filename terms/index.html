@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Terms | Card Finder Live</title>
+  <style>
+    :root{
+      color-scheme: light;
+      --navy:#051b49;
+      --blue:#0646a7;
+      --blue-bright:#0b66ff;
+      --orange:#ff7a00;
+      --ink:#101828;
+      --muted:#5b667a;
+      --line:#dfe7f2;
+      --bg:#f5f8fc;
+      --card:#ffffff;
+    }
+    *{box-sizing:border-box}
+    body{
+      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+      margin:0;
+      background:
+        radial-gradient(circle at top left, rgba(11,102,255,.12), rgba(11,102,255,0) 32rem),
+        radial-gradient(circle at top right, rgba(255,122,0,.12), rgba(255,122,0,0) 30rem),
+        var(--bg);
+      color:var(--ink);
+      line-height:1.55
+    }
+    .wrap{width:min(1120px, calc(100% - 32px)); margin:0 auto}
+    header{
+      padding:30px 0 16px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:18px;
+      flex-wrap:wrap
+    }
+    .brand{
+      display:inline-flex;
+      align-items:center;
+      gap:12px;
+      color:var(--blue);
+      text-decoration:none;
+      font-size:clamp(30px,4.4vw,54px);
+      line-height:1;
+      font-weight:950;
+      letter-spacing:-.06em
+    }
+    .brand span span{color:var(--orange); margin-left:6px}
+    nav{display:flex; gap:16px; flex-wrap:wrap; align-items:center}
+    nav a{color:var(--blue-bright); text-decoration:none; font-weight:800}
+    nav a[aria-current="page"]{color:var(--navy)}
+    main{
+      max-width:860px;
+      margin:0 auto;
+      padding:0 0 40px;
+      line-height:1.55
+    }
+    .panel{
+      background:var(--card);
+      border:1px solid var(--line);
+      border-radius:28px;
+      box-shadow:0 12px 32px rgba(5, 27, 73, 0.055);
+      padding:clamp(22px, 4vw, 34px)
+    }
+    h1{font-size:clamp(32px,4vw,46px); margin:0 0 8px; color:var(--navy); letter-spacing:-.05em}
+    h2{font-size:20px; margin:28px 0 8px; color:var(--navy)}
+    p,li{font-size:16px; color:#334e68}
+    a{color:var(--blue-bright)}
+    footer{
+      padding:24px 0 52px;
+      color:var(--muted);
+      font-size:15px
+    }
+    footer .links{display:flex; gap:14px; flex-wrap:wrap; margin:10px 0}
+    footer a{text-decoration:none; color:var(--blue-bright); font-weight:800}
+    @media (max-width:560px){
+      nav{gap:12px}
+      .panel{border-radius:24px}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <a class="brand" href="/" aria-label="CardFinder Live home">
+        <span>CardFinder<span>Live</span></span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <a href="/">Home</a>
+        <a href="/our-story/">Our Story</a>
+        <a href="/privacy/">Privacy</a>
+        <a href="/terms/" aria-current="page">Terms</a>
+        <a href="/support/">Support</a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="panel">
+        <h1>Card Finder Live Terms</h1>
+
+        <p>
+          By using Card Finder Live, you agree to use the app responsibly and only for lawful purposes.
+          These terms are intentionally brief while the public website remains limited during pre-launch review.
+        </p>
+
+        <h2>App use</h2>
+        <ul>
+          <li>Users are responsible for the information, listings, photos, messages, and other content they submit.</li>
+          <li>Do not post misleading, unlawful, harmful, infringing, abusive, or unsafe content.</li>
+          <li>Do not use the app to harass, scam, spam, impersonate others, or violate applicable laws.</li>
+          <li>Card Finder Live may remove content, limit access, or suspend accounts to protect users and the service.</li>
+        </ul>
+
+        <h2>Transactions and meetups</h2>
+        <p>
+          Card Finder Live may help users discover cards, shows, shops, and other collectors. Users are responsible
+          for their own communications, decisions, meetups, purchases, sales, trades, and safety precautions.
+          Card Finder Live does not guarantee card authenticity, condition, pricing, availability, user identity,
+          transaction completion, or meetup safety.
+        </p>
+
+        <h2>Purchases and access</h2>
+        <p>
+          App access may be provided through free launch access, passes, memberships, or subscriptions.
+          Mobile app purchases are handled through Apple App Store or Google Play billing where applicable.
+          Purchase availability, terms, cancellation, renewal, and refund handling may depend on the relevant app store.
+        </p>
+
+        <h2>Support</h2>
+        <p>
+          For support, safety reports, account deletion, or data deletion requests, contact
+          <a href="mailto:support@cardfinderlive.com">support@cardfinderlive.com</a>.
+        </p>
+      </div>
+    </main>
+
+    <footer>
+      <div class="links">
+        <a href="/">Home</a>
+        <a href="/our-story/">Our Story</a>
+        <a href="/privacy/">Privacy Policy</a>
+        <a href="/terms/">Terms of Service</a>
+        <a href="/support/">Support</a>
+        <a href="mailto:support@cardfinderlive.com">support@cardfinderlive.com</a>
+      </div>
+      <div>© 2026 CardFinder Live</div>
+    </footer>
+  </div>
+</body>
+</html>

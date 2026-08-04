@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Our Story | CardFinder Live</title>
+  <meta name="description" content="Why CardFinder Live exists, told by the founder as a collector-first story." />
+  <style>
+    :root {
+      color-scheme: light;
+      --navy: #051b49;
+      --blue: #0646a7;
+      --blue-bright: #0b66ff;
+      --orange: #ff7a00;
+      --ink: #101828;
+      --muted: #5b667a;
+      --line: #dfe7f2;
+      --bg: #f5f8fc;
+      --card: #ffffff;
+      --soft-blue: #eaf3ff;
+      --soft-orange: #fff3e8;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at top left, rgba(11, 102, 255, 0.12), rgba(11, 102, 255, 0) 32rem),
+        radial-gradient(circle at top right, rgba(255, 122, 0, 0.12), rgba(255, 122, 0, 0) 30rem),
+        var(--bg);
+      line-height: 1.55;
+    }
+
+    .wrap {
+      width: min(1120px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    header {
+      padding: 30px 0 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      color: var(--blue);
+      text-decoration: none;
+      font-size: clamp(30px, 4.4vw, 54px);
+      line-height: 1;
+      font-weight: 950;
+      letter-spacing: -0.06em;
+    }
+
+    .brand span span {
+      color: var(--orange);
+      margin-left: 6px;
+    }
+
+    nav {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    nav a,
+    footer a {
+      color: var(--blue-bright);
+      text-decoration: none;
+      font-weight: 800;
+    }
+
+    nav a[aria-current="page"] {
+      color: var(--navy);
+    }
+
+    .hero {
+      margin-top: 24px;
+      background: linear-gradient(135deg, #062b73 0%, #041a47 62%, #031335 100%);
+      color: white;
+      border-radius: 34px;
+      padding: clamp(28px, 5vw, 58px);
+      box-shadow: 0 24px 70px rgba(5, 27, 73, 0.26);
+      overflow: hidden;
+      position: relative;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      right: -130px;
+      bottom: -160px;
+      width: 420px;
+      height: 420px;
+      border: 1px solid rgba(255,255,255,0.16);
+      border-radius: 50%;
+      box-shadow:
+        -34px -34px 0 rgba(255,255,255,0.035),
+        -68px -68px 0 rgba(255,255,255,0.025),
+        -102px -102px 0 rgba(255,255,255,0.018);
+      pointer-events: none;
+    }
+
+    .hero-copy {
+      position: relative;
+      z-index: 1;
+      max-width: 820px;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 900;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.72);
+      font-size: 12px;
+      margin: 0 0 12px;
+    }
+
+    h1 {
+      font-size: clamp(42px, 7vw, 76px);
+      line-height: 0.95;
+      margin: 0;
+      letter-spacing: -0.065em;
+    }
+
+    .subtitle {
+      margin: 18px 0 0;
+      font-size: clamp(18px, 2.4vw, 24px);
+      color: rgba(255,255,255,0.82);
+    }
+
+    .story {
+      margin-top: 28px;
+      display: grid;
+      gap: 18px;
+    }
+
+    .section-card,
+    .callout {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      box-shadow: 0 12px 32px rgba(5, 27, 73, 0.055);
+    }
+
+    .section-card {
+      padding: clamp(22px, 4vw, 32px);
+    }
+
+    .section-card h2,
+    .vision h2 {
+      margin: 0 0 12px;
+      color: var(--navy);
+      font-size: clamp(24px, 3vw, 34px);
+      line-height: 1.05;
+      letter-spacing: -0.04em;
+    }
+
+    .section-card p,
+    .vision p {
+      color: var(--muted);
+      font-size: 17px;
+      margin: 0;
+    }
+
+    .section-card p + p,
+    .section-card p + ul,
+    .section-card ul + p {
+      margin-top: 14px;
+    }
+
+    .callout {
+      padding: clamp(20px, 4vw, 28px);
+      border-left: 6px solid var(--orange);
+      background: linear-gradient(135deg, var(--soft-orange), #ffffff);
+    }
+
+    .callout p {
+      margin: 0;
+      color: var(--navy);
+      font-size: clamp(18px, 2.2vw, 22px);
+      font-weight: 700;
+      line-height: 1.55;
+    }
+
+    .story-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .story-grid .section-card {
+      min-height: 100%;
+    }
+
+    .vision {
+      padding: clamp(22px, 4vw, 32px);
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.97), rgba(234, 243, 255, 0.94));
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      box-shadow: 0 12px 32px rgba(5, 27, 73, 0.055);
+    }
+
+    footer {
+      padding: 34px 0 52px;
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    footer .links {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin: 10px 0;
+    }
+
+    @media (max-width: 940px) {
+      .story-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 560px) {
+      .hero {
+        border-radius: 28px;
+      }
+
+      .story {
+        gap: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <a class="brand" href="/" aria-label="CardFinder Live home">
+        <span>CardFinder<span>Live</span></span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <a href="/">Home</a>
+        <a href="/our-story/" aria-current="page">Our Story</a>
+        <a href="/privacy/">Privacy</a>
+        <a href="/terms/">Terms</a>
+        <a href="/support/">Support</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <div class="eyebrow">Founder story</div>
+          <h1>Why I Built CardFinder Live</h1>
+          <p class="subtitle">A collector's story.</p>
+        </div>
+      </section>
+
+      <section class="story" aria-label="Founder story">
+        <article class="section-card">
+          <h2>How it Started</h2>
+          <p>
+            Hi, I'm Steven. Like a lot of collectors, I loved sports cards early on, drifted away for a while,
+            and found my way back around 2020 when the hobby pulled me back in.
+          </p>
+          <p>
+            That brought me back to local card shows, regional events, and eventually The National.
+            I really do love walking shows, digging through cases, and finding cards I wasn't even looking for.
+            That's still one of the best parts of collecting for me.
+          </p>
+        </article>
+
+        <article class="section-card">
+          <h2>The Moment Everything Clicked</h2>
+          <p>
+            At The National, I had a handful of cards I was hoping to find.
+            I found a couple of them, but there were others I never came across.
+          </p>
+          <p>
+            What stayed with me afterward wasn't just that I missed those cards.
+            It was realizing I had no way of knowing whether they had actually been there.
+            That's when I started thinking: what if there was an app that made the cards at a show searchable before you spent hours wondering if they were even there?
+          </p>
+        </article>
+
+        <div class="callout" role="note" aria-label="CardFinder Live philosophy">
+          <p>
+            CardFinder Live isn't here to replace the hunt. It's here to make the whole collecting experience better.
+          </p>
+        </div>
+
+        <section class="vision" aria-labelledby="bigger-vision-title">
+          <h2 id="bigger-vision-title">The Bigger Vision</h2>
+          <p>
+            The more I thought about it, the more I realized this wasn't just about finding one card at one show.
+          </p>
+          <p>
+            Whether you're sitting at home planning your weekend, waiting in line before a show opens, or walking the floor,
+            the goal is the same: help collectors spend less time wondering what's out there and more time enjoying the hobby.
+          </p>
+          <p>
+            That's where things like discovering shows, preparing before you go, seeing what collectors are bringing,
+            connecting beforehand, making cards discoverable, and coordinating real-world deals all started to fit together.
+          </p>
+        </section>
+
+        <div class="story-grid">
+          <article class="section-card">
+            <h2>Building CardFinder Live</h2>
+            <p>
+              I realized this app should exist, but I had no idea how to build it.
+              So I decided to learn.
+            </p>
+            <p>
+              It took me about eleven months to turn that idea into something real.
+              CardFinder Live is still evolving, and that's the point.
+            </p>
+          </article>
+
+          <article class="section-card">
+            <h2>A Note to Collectors</h2>
+            <p>
+              Thanks for taking the time to read my story.
+            </p>
+            <p>
+              I hope CardFinder Live helps you find that next great card.
+            </p>
+            <p>
+              Built by a collector. For collectors.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="links">
+        <a href="/">Home</a>
+        <a href="/our-story/">Our Story</a>
+        <a href="/privacy/">Privacy Policy</a>
+        <a href="/terms/">Terms of Service</a>
+        <a href="/support/">Support</a>
+        <a href="mailto:support@cardfinderlive.com">support@cardfinderlive.com</a>
+      </div>
+      <div>© 2026 CardFinder Live</div>
+    </footer>
+  </div>
+</body>
+</html>
