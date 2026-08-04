@@ -88,13 +88,13 @@
       background: linear-gradient(135deg, #062b73 0%, #041a47 62%, #031335 100%);
       color: white;
       border-radius: 34px;
-      padding: clamp(28px, 5vw, 58px);
+      padding: clamp(24px, 4.4vw, 48px);
       box-shadow: 0 24px 70px rgba(5, 27, 73, 0.26);
       overflow: hidden;
       position: relative;
       display: grid;
       grid-template-columns: minmax(0, 1.1fr) minmax(280px, 0.9fr);
-      gap: clamp(26px, 4vw, 52px);
+      gap: clamp(18px, 3.2vw, 40px);
       align-items: center;
     }
 
@@ -141,18 +141,18 @@
       max-width: 730px;
       font-size: clamp(18px, 2.2vw, 24px);
       color: rgba(255,255,255,0.82);
-      margin: 22px 0 0;
+      margin: 16px 0 0;
     }
 
     .actions {
-      margin-top: 28px;
+      margin-top: 22px;
       display: flex;
       gap: 12px;
       flex-wrap: wrap;
     }
 
     .store-actions {
-      margin-top: 30px;
+      margin-top: 20px;
       display: flex;
       gap: 12px;
       flex-wrap: wrap;
@@ -240,10 +240,11 @@
     .hero-media {
       display: grid;
       place-items: center;
+      transform: translateY(-24px);
     }
 
     .app-icon {
-      width: min(260px, 68vw);
+      width: min(250px, 66vw);
       border-radius: 28%;
       box-shadow: 0 28px 70px rgba(0,0,0,0.28);
       transform: rotate(0deg);
@@ -409,10 +410,11 @@
 
       .hero-media {
         justify-content: flex-start;
+        transform: translateY(-10px);
       }
 
       .app-icon {
-        width: min(190px, 64vw);
+        width: min(188px, 64vw);
       }
 
       .feature-grid {
@@ -457,9 +459,8 @@
         <div class="hero-copy">
           <h1><span class="phrase">Find cards.</span> <span class="phrase">Find shows.</span> <span class="orange">Make real-world deals.</span></h1>
           <p class="lead">
-            Imagine walking into a card show already knowing the card you've been chasing is there.
-            That's why I built CardFinder Live. Built by a collector for collectors, it helps you find cards,
-            discover shows, connect with other collectors, and spend less time searching every aisle and more time collecting.
+            Walk into a card show already knowing the card you've been chasing is there.
+            CardFinder Live helps collectors find cards, discover shows, and connect with other collectors so they can spend more time collecting.
           </p>
           <div class="store-actions" aria-label="Download CardFinder Live">
             <a class="button store primary" href="https://apps.apple.com/app/cardfinder-live/id6757400880" rel="noopener">
