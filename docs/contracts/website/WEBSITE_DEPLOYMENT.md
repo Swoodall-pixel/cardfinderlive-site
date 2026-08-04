@@ -122,6 +122,15 @@ For future website changes:
 7. Wait for GitHub Pages deployment.
 8. Re-verify production.
 
+## Lesson learned
+
+Before considering a website task complete, always verify:
+
+- `git status` is clean
+- the changes are committed
+- the changes are pushed to `main`
+- the live website matches the latest production commit
+
 ## Canonical source of truth
 
 For launch V1 and beyond, the website repository itself is the source of truth for the public site.
