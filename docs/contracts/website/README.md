@@ -30,6 +30,26 @@ Start here for future website releases:
 
 - `WEBSITE_DEPLOYMENT.md`
 
+## Quick AI navigation
+
+When a future ChatGPT or Codex session needs to work on the website, read these docs in order:
+
+1. `README.md`
+2. `WEBSITE_DEPLOYMENT.md`
+3. `FOUNDER_STORY.md`
+4. `OUR_STORY_PAGE_SPEC.md`
+5. `WEBSITE_V2_ROADMAP.md`
+
+If the task is only to edit copy or routes, follow the required website workflow in `WEBSITE_DEPLOYMENT.md` and do not call the task complete until:
+
+- the changes are committed
+- the changes are pushed to `main`
+- `origin/main` matches `HEAD`
+- GitHub Pages has started deploying the new commit
+- the live page matches the newest commit
+
+Use the mandatory reporting checklist from `WEBSITE_DEPLOYMENT.md` for every website task.
+
 ## Notes
 
 - Do not treat `WEBSITE_V2_ROADMAP.md` as Launch V1 scope

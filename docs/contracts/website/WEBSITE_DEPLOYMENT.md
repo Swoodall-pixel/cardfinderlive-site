@@ -9,6 +9,44 @@ This document is the canonical guide for publishing the CardFinder Live public w
 
 Use this document when editing, reviewing, committing, pushing, or rolling back the production site.
 
+## Required website task workflow
+
+Website work must move through three explicit phases:
+
+### Phase 1 — Edit
+
+- Make the requested changes locally.
+- Validate the HTML/CSS and route structure.
+- Stop before assuming anything is live.
+
+### Phase 2 — Publish
+
+- Check `git status`.
+- Commit the changes.
+- Push to `origin/main`.
+- Verify both:
+  - the working tree is clean
+  - `origin/main` matches `HEAD`
+
+### Phase 3 — Production verification
+
+- Wait for GitHub Pages to finish deploying.
+- Verify the live production page reflects the latest commit.
+- If production does not match, identify why before reporting success.
+
+## Mandatory reporting format
+
+Use this checklist for every website task:
+
+- [ ] Edited locally only
+- [ ] Committed
+- [ ] Pushed
+- [ ] `origin/main == HEAD`
+- [ ] GitHub Pages deployment initiated
+- [ ] Live production verified
+
+Do not report "Done", "Completed", or "Published" unless the requested change has been committed, pushed, and the deployment state has been explicitly verified.
+
 ## Production repository
 
 - Repository: `Swoodall-pixel/cardfinderlive-site`
@@ -121,6 +159,7 @@ For future website changes:
 6. Push to `origin/main`.
 7. Wait for GitHub Pages deployment.
 8. Re-verify production.
+9. Only then mark the task complete.
 
 ## Lesson learned
 
