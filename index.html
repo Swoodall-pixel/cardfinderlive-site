@@ -458,10 +458,36 @@
       color: #fff;
       display: grid;
       place-items: center;
-      font-size: 18px;
-      font-weight: 950;
-      letter-spacing: -0.04em;
       box-shadow: 0 12px 22px rgba(6, 70, 167, 0.18);
+      flex: 0 0 auto;
+      overflow: hidden;
+    }
+
+    .social-icon svg {
+      width: 28px;
+      height: 28px;
+      display: block;
+      fill: currentColor;
+    }
+
+    .social-icon.instagram {
+      background: linear-gradient(135deg, #f58529 0%, #feda77 26%, #dd2a7b 60%, #8134af 100%);
+    }
+
+    .social-icon.youtube {
+      background: #ff0033;
+    }
+
+    .social-icon.facebook {
+      background: #1877f2;
+    }
+
+    .social-icon.x {
+      background: #0f1419;
+    }
+
+    .social-icon.tiktok {
+      background: #111111;
     }
 
     .social-name {
@@ -678,23 +704,48 @@
 
         <div class="social-row" aria-label="CardFinder Live social links">
           <a class="social-link" href="https://www.instagram.com/cardfinderlive/" target="_blank" rel="noopener noreferrer" aria-label="Follow CardFinder Live on Instagram">
-            <span class="social-icon" aria-hidden="true">IG</span>
+            <span class="social-icon instagram" aria-hidden="true">
+              <svg viewBox="0 0 24 24" role="img" focusable="false" aria-hidden="true">
+                <rect x="3.5" y="3.5" width="17" height="17" rx="5" fill="none" stroke="currentColor" stroke-width="1.8"/>
+                <circle cx="12" cy="12" r="4.25" fill="none" stroke="currentColor" stroke-width="1.8"/>
+                <circle cx="17.05" cy="6.95" r="1.2" />
+              </svg>
+            </span>
             <span class="social-name">Instagram</span>
           </a>
           <a class="social-link" href="https://www.youtube.com/@CardFinderLive" target="_blank" rel="noopener noreferrer" aria-label="Follow CardFinder Live on YouTube">
-            <span class="social-icon" aria-hidden="true">YT</span>
+            <span class="social-icon youtube" aria-hidden="true">
+              <svg viewBox="0 0 24 24" role="img" focusable="false" aria-hidden="true">
+                <path d="M21.6 7.4c-.2-.8-.8-1.4-1.6-1.6C18.6 5.4 12 5.4 12 5.4s-6.6 0-8 .4c-.8.2-1.4.8-1.6 1.6C2 8.8 2 12 2 12s0 3.2.4 4.6c.2.8.8 1.4 1.6 1.6 1.4.4 8 .4 8 .4s6.6 0 8-.4c.8-.2 1.4-.8 1.6-1.6.4-1.4.4-4.6.4-4.6s0-3.2-.4-4.6Z" />
+                <path d="M10 15.3V8.7L15.7 12 10 15.3Z" fill="#fff" />
+              </svg>
+            </span>
             <span class="social-name">YouTube</span>
           </a>
           <a class="social-link" href="https://www.facebook.com/profile.php?id=61585046140962" target="_blank" rel="noopener noreferrer" aria-label="Follow CardFinder Live on Facebook">
-            <span class="social-icon" aria-hidden="true">FB</span>
+            <span class="social-icon facebook" aria-hidden="true">
+              <svg viewBox="0 0 24 24" role="img" focusable="false" aria-hidden="true">
+                <path d="M13.6 21v-7h2.4l.4-2.8h-2.8V9.4c0-.8.2-1.3 1.4-1.3h1.5V5.6c-.6-.1-1.6-.2-2.8-.2-2.6 0-4.4 1.5-4.4 4.3v1.5H7V14h2.3v7h4.3Z" fill="#fff"/>
+              </svg>
+            </span>
             <span class="social-name">Facebook</span>
           </a>
           <a class="social-link" href="https://x.com/cardfinderlive?s=11" target="_blank" rel="noopener noreferrer" aria-label="Follow CardFinder Live on X">
-            <span class="social-icon" aria-hidden="true">X</span>
+            <span class="social-icon x" aria-hidden="true">
+              <svg viewBox="0 0 24 24" role="img" focusable="false" aria-hidden="true">
+                <path d="M4 5.5h3.7l4.2 5.7 4.9-5.7H20l-6.4 7.4L20 18.5h-3.7l-4.6-6.2-5.3 6.2H4l6.8-7.8L4 5.5Z" fill="#fff"/>
+              </svg>
+            </span>
             <span class="social-name">X</span>
           </a>
           <a class="social-link" href="https://www.tiktok.com/@cardfinder.live" target="_blank" rel="noopener noreferrer" aria-label="Follow CardFinder Live on TikTok">
-            <span class="social-icon" aria-hidden="true">TT</span>
+            <span class="social-icon tiktok" aria-hidden="true">
+              <svg viewBox="0 0 24 24" role="img" focusable="false" aria-hidden="true">
+                <path d="M13 4.2c.5 1.9 1.7 3.3 3.5 4v2.7c-1.6-.2-2.9-.7-4.1-1.6v5.1c0 2.8-2.3 4.8-5.1 4.8-2 0-3.6-1-4.4-2.6-.8-1.6-.6-3.8.7-5.1 1.1-1.1 2.7-1.7 4.4-1.4v2.8c-.7-.1-1.4.1-1.9.6-.8.7-1 2-.5 2.9.5.9 1.5 1.5 2.6 1.5 1.6 0 2.9-1.2 2.9-2.8V4.2H13Z" fill="#25F4EE" opacity=".95"/>
+                <path d="M13.4 4.6c.5 1.9 1.7 3.3 3.5 4v2.7c-1.6-.2-2.9-.7-4.1-1.6v5.1c0 2.8-2.3 4.8-5.1 4.8-2 0-3.6-1-4.4-2.6-.8-1.6-.6-3.8.7-5.1 1.1-1.1 2.7-1.7 4.4-1.4v2.8c-.7-.1-1.4.1-1.9.6-.8.7-1 2-.5 2.9.5.9 1.5 1.5 2.6 1.5 1.6 0 2.9-1.2 2.9-2.8V4.6h1.9Z" fill="#FE2C55" opacity=".9"/>
+                <path d="M13 4.2c.5 1.9 1.7 3.3 3.5 4v2.7c-1.6-.2-2.9-.7-4.1-1.6v5.1c0 2.8-2.3 4.8-5.1 4.8-2 0-3.6-1-4.4-2.6-.8-1.6-.6-3.8.7-5.1 1.1-1.1 2.7-1.7 4.4-1.4v2.8c-.7-.1-1.4.1-1.9.6-.8.7-1 2-.5 2.9.5.9 1.5 1.5 2.6 1.5 1.6 0 2.9-1.2 2.9-2.8V4.2H13Z" fill="#fff"/>
+              </svg>
+            </span>
             <span class="social-name">TikTok</span>
           </a>
         </div>
