@@ -306,6 +306,17 @@
       position: relative;
     }
 
+    .feature .icon svg {
+      width: 26px;
+      height: 26px;
+      display: block;
+      fill: none;
+      stroke: currentColor;
+      stroke-width: 2.1;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
     .feature .icon::after {
       content: "";
       position: absolute;
@@ -635,7 +646,16 @@
             <p>Discover card shows near you or across the country.</p>
           </article>
           <article class="feature">
-            <div class="icon">⌂</div>
+            <div class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" role="img" focusable="false" aria-hidden="true">
+                <path d="M4 10.5 12 4l8 6.5" />
+                <path d="M5.5 9.5V20h13V9.5" />
+                <path d="M9 20v-5h6v5" />
+                <path d="M4 10.5h16" />
+                <path d="M7.3 13h1.4" />
+                <path d="M15.3 13h1.4" />
+              </svg>
+            </div>
             <h3>Find Card Shops</h3>
             <p>Find local card shops and more places to collect.</p>
           </article>
