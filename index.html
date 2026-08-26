@@ -166,6 +166,27 @@
       flex: 1 1 240px;
     }
 
+    .academy-action {
+      width: 100%;
+      margin-top: 12px;
+      min-height: 46px;
+      gap: 9px;
+      background: rgba(255,255,255,0.06);
+      color: white;
+      border: 1px solid rgba(255,255,255,0.24);
+      box-shadow: none;
+    }
+
+    .academy-action:hover {
+      background: rgba(255,255,255,0.1);
+      border-color: rgba(255,255,255,0.36);
+    }
+
+    .academy-action:focus-visible {
+      outline: 3px solid rgba(255,255,255,0.9);
+      outline-offset: 3px;
+    }
+
     .button {
       display: inline-flex;
       align-items: center;
@@ -593,6 +614,7 @@
       <nav aria-label="Primary navigation">
         <a href="/" aria-current="page">Home</a>
         <a href="/our-story/">Our Story</a>
+        <a href="https://youtube.com/playlist?list=PLBURvTkWW9UY&amp;si=6SZ5YaF1Pc_MpFmB" target="_blank" rel="noopener noreferrer">Academy</a>
         <a href="#follow-us">Follow Us</a>
         <a href="/privacy/">Privacy</a>
         <a href="/terms/">Terms</a>
@@ -622,6 +644,10 @@
               </span>
             </a>
           </div>
+          <a class="button academy-action" href="https://youtube.com/playlist?list=PLBURvTkWW9UY&amp;si=6SZ5YaF1Pc_MpFmB" target="_blank" rel="noopener noreferrer">
+            <span aria-hidden="true">&#9654;</span>
+            <span>See How CardFinder Live Works</span>
+          </a>
         </div>
         <div class="hero-media" aria-label="CardFinder Live app icon">
           <img class="app-icon" src="/assets/app-icon.png" alt="CardFinder Live app icon" />
