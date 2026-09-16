@@ -175,3 +175,32 @@ Before considering a website task complete, always verify:
 For launch V1 and beyond, the website repository itself is the source of truth for the public site.
 
 The docs in `docs/contracts/website/` should always describe the live site as it actually exists.
+
+## SEO foundation — September 15, 2026 local implementation
+
+The consumer pages remain hand-authored static HTML with inline CSS. GitHub Pages also runs its default Jekyll processing when publishing this repository from the branch; Markdown can become generated HTML even though the consumer pages do not use templates. The September 15 audit observed public internal documentation at `/docs/contracts/website/` and `/docs/contracts/website/WEBSITE_DEPLOYMENT.html`.
+
+The root `_config.yml` now excludes `docs` from Jekyll output. Keep these source documents in Git; they are not consumer pages and must not be published. Do not replace this exclusion with robots blocking or remove the documentation source.
+
+This implementation is LOCAL ONLY until a separately authorized commit, push, and production verification. A local preview is not deployment proof. Do not execute the publish workflow above when the task explicitly authorizes local work only.
+
+### Consumer routes and indexing
+
+Indexable canonical routes: `/`, `/our-story/`, `/support/`, `/find-cards/`, `/card-shows/`. Only these five belong in `sitemap.xml`. Privacy and Terms remain accessible and crawlable, with `noindex,follow`, and are excluded from the sitemap. Each of the seven consumer pages uses its own absolute HTTPS non-www canonical. Preserve `robots.txt`, `CNAME`, and existing host redirects.
+
+### Assets and product boundaries
+
+Preserve original PNG masters. Responsive WebP derivatives live under `assets/optimized/`; do not infer page transfer bytes by summing all derivative sizes. Below-fold screenshots use lazy loading and intrinsic dimensions. Keep the hero icon eager; do not add high fetch priority without measuring the actual LCP element.
+
+The two new pages explain discovery inside the app, not public website inventory or an event calendar. Maintain conditional participation/messaging, expected-versus-Live inventory, and no guarantees of card availability, card possession, venue entry, meetup safety, or per-card payment/shipping protection.
+
+### Required post-deployment checks (not performed by local implementation)
+
+- Verify all seven consumer routes, their metadata, navigation, images, store links, analytics, and mobile rendering.
+- Confirm `/docs/contracts/website/`, `/docs/contracts/website/WEBSITE_DEPLOYMENT.html`, and raw documentation URLs no longer publish (expected 404).
+- Confirm legal pages return 200 with noindex; indexable pages must not inherit noindex.
+- Confirm the sitemap returns 200 with exactly five canonical URLs and robots still references it.
+- Recheck HTTPS/non-www/trailing-slash redirects and a genuine missing-page 404.
+- Validate factual JSON-LD; do not invent ratings or offers to qualify for software-app rich results.
+- Recheck responsive image selection, screenshot legibility, and lab performance. GSC field metrics are separate.
+- Only after publication is separately authorized, inspect intended URLs in Search Console and record the measurement baseline. Do not submit requests during local-only work.

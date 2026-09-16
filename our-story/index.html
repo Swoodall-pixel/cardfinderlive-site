@@ -3,8 +3,25 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Our Story | CardFinder Live</title>
-  <meta name="description" content="Why CardFinder Live exists, told by the founder as a collector-first story." />
+  <title>Why I Built CardFinder Live | Our Story</title>
+  <meta name="description" content="A collector's search at card shows inspired CardFinder Live. Read Steven's story and the idea behind finding cards, collectors, and real-world opportunities." />
+  <link rel="canonical" href="https://cardfinderlive.com/our-story/" />
+  <link rel="icon" type="image/png" sizes="48x48" href="/assets/favicon-48.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png" />
+  <meta property="og:title" content="Why I Built CardFinder Live | Our Story" />
+  <meta property="og:description" content="A collector's search at card shows inspired CardFinder Live. Read Steven's story and the idea behind finding cards, collectors, and real-world opportunities." />
+  <meta property="og:url" content="https://cardfinderlive.com/our-story/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="CardFinder Live" />
+  <meta property="og:image" content="https://cardfinderlive.com/assets/social/cardfinder-live-1200x630.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="CardFinder Live — Find cards. Find shows. Make real-world deals." />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Why I Built CardFinder Live | Our Story" />
+  <meta name="twitter:description" content="A collector's search at card shows inspired CardFinder Live. Read Steven's story and the idea behind finding cards, collectors, and real-world opportunities." />
+  <meta name="twitter:image" content="https://cardfinderlive.com/assets/social/cardfinder-live-1200x630.jpg" />
+  <meta name="twitter:image:alt" content="CardFinder Live — Find cards. Find shows. Make real-world deals." />
   <style>
     :root {
       color-scheme: light;
@@ -241,6 +258,17 @@
         gap: 14px;
       }
     }
+
+    a:focus-visible,
+    .social-link:focus-visible {
+      outline: 3px solid var(--orange);
+      outline-offset: 4px;
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .social-link { transition: none; }
+      .social-link:hover, .social-link:focus-visible { transform: none; }
+    }
   </style>
 </head>
 <body>
@@ -251,11 +279,10 @@
       </a>
       <nav aria-label="Primary navigation">
         <a href="/">Home</a>
+        <a href="/find-cards/">Find Cards</a>
+        <a href="/card-shows/">Card Shows</a>
         <a href="/our-story/" aria-current="page">Our Story</a>
         <a href="https://youtube.com/playlist?list=PLBURvTkWW9UY&amp;si=6SZ5YaF1Pc_MpFmB" target="_blank" rel="noopener noreferrer">Academy</a>
-        <a href="/#follow-us">Follow Us</a>
-        <a href="/privacy/">Privacy</a>
-        <a href="/terms/">Terms</a>
         <a href="/support/">Support</a>
       </nav>
     </header>
@@ -327,7 +354,7 @@
             The bigger opportunity was to make more of that world discoverable.
           </p>
           <p>
-            Find the cards you're chasing. Discover shows and shops. See what other collectors have available.
+            <a href="/find-cards/">Find the cards you're chasing.</a> Discover shows and shops. See what other collectors have available.
             Connect, meet up, and make real-world deals.
           </p>
           <p>
@@ -374,11 +401,12 @@
 
     <footer>
       <div class="links">
-        <a href="/">Home</a>
+        <a href="/find-cards/">Find Cards</a>
+        <a href="/card-shows/">Card Shows</a>
         <a href="/our-story/">Our Story</a>
-        <a href="/privacy/">Privacy Policy</a>
-        <a href="/terms/">Terms of Service</a>
         <a href="/support/">Support</a>
+        <a href="/privacy/">Privacy</a>
+        <a href="/terms/">Terms</a>
         <a href="mailto:support@cardfinderlive.com">support@cardfinderlive.com</a>
       </div>
       <div>© 2026 CardFinder Live</div>

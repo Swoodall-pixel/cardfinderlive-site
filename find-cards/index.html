@@ -1,0 +1,796 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Find Sports Cards Near You &amp; Nationwide | CardFinder Live</title>
+  <meta name="description" content="Search cards shared by collectors nearby, statewide, or nationwide. Save searches, build a Watchlist, and explore practical in-person meetup options." />
+  <link rel="canonical" href="https://cardfinderlive.com/find-cards/" />
+  <link rel="icon" type="image/png" sizes="48x48" href="/assets/favicon-48.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png" />
+  <meta property="og:title" content="Find Sports Cards Near You &amp; Nationwide | CardFinder Live" />
+  <meta property="og:description" content="Search cards shared by collectors nearby, statewide, or nationwide. Save searches, build a Watchlist, and explore practical in-person meetup options." />
+  <meta property="og:url" content="https://cardfinderlive.com/find-cards/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="CardFinder Live" />
+  <meta property="og:image" content="https://cardfinderlive.com/assets/social/cardfinder-live-1200x630.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="CardFinder Live — Find cards. Find shows. Make real-world deals." />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Find Sports Cards Near You &amp; Nationwide | CardFinder Live" />
+  <meta name="twitter:description" content="Search cards shared by collectors nearby, statewide, or nationwide. Save searches, build a Watchlist, and explore practical in-person meetup options." />
+  <meta name="twitter:image" content="https://cardfinderlive.com/assets/social/cardfinder-live-1200x630.jpg" />
+  <meta name="twitter:image:alt" content="CardFinder Live — Find cards. Find shows. Make real-world deals." />
+  <style>
+    :root {
+      color-scheme: light;
+      --navy: #051b49;
+      --blue: #0646a7;
+      --blue-bright: #0b66ff;
+      --orange: #ff7a00;
+      --ink: #101828;
+      --muted: #5b667a;
+      --line: #dfe7f2;
+      --bg: #f5f8fc;
+      --card: #ffffff;
+      --soft-blue: #eaf3ff;
+      --soft-orange: #fff3e8;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at top left, rgba(11, 102, 255, 0.12), rgba(11, 102, 255, 0) 32rem),
+        radial-gradient(circle at top right, rgba(255, 122, 0, 0.12), rgba(255, 122, 0, 0) 30rem),
+        var(--bg);
+      line-height: 1.55;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .wrap {
+      width: min(1120px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    header {
+      padding: 30px 0 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      color: var(--blue);
+      text-decoration: none;
+      font-size: clamp(30px, 4.4vw, 54px);
+      line-height: 1;
+      font-weight: 950;
+      letter-spacing: -0.06em;
+    }
+
+    .brand span span {
+      color: var(--orange);
+      margin-left: 6px;
+    }
+
+    nav {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    nav a,
+    footer a {
+      color: var(--blue-bright);
+      text-decoration: none;
+      font-weight: 800;
+    }
+
+    nav a[aria-current="page"] {
+      color: var(--navy);
+    }
+
+    .hero {
+      margin-top: 24px;
+      background: linear-gradient(135deg, #062b73 0%, #041a47 62%, #031335 100%);
+      color: white;
+      border-radius: 34px;
+      padding: clamp(24px, 4.4vw, 48px);
+      box-shadow: 0 24px 70px rgba(5, 27, 73, 0.26);
+      overflow: hidden;
+      position: relative;
+      display: grid;
+      grid-template-columns: minmax(0, 1.1fr) minmax(280px, 0.9fr);
+      gap: clamp(18px, 3.2vw, 40px);
+      align-items: center;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      right: -130px;
+      bottom: -160px;
+      width: 420px;
+      height: 420px;
+      border: 1px solid rgba(255,255,255,0.16);
+      border-radius: 50%;
+      box-shadow:
+        -34px -34px 0 rgba(255,255,255,0.035),
+        -68px -68px 0 rgba(255,255,255,0.025),
+        -102px -102px 0 rgba(255,255,255,0.018);
+    }
+
+    .hero-copy,
+    .hero-media {
+      position: relative;
+      z-index: 1;
+    }
+
+    h1 {
+      max-width: 760px;
+      font-size: clamp(42px, 7vw, 78px);
+      line-height: 0.96;
+      margin: 0;
+      letter-spacing: -0.065em;
+    }
+
+    h1 .orange {
+      color: var(--orange);
+      white-space: normal;
+    }
+
+    h1 .phrase {
+      display: inline-block;
+      margin-right: 0.18em;
+    }
+
+    .lead {
+      max-width: 730px;
+      font-size: clamp(18px, 2.2vw, 24px);
+      color: rgba(255,255,255,0.82);
+      margin: 16px 0 0;
+    }
+
+    .actions {
+      margin-top: 22px;
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .store-actions {
+      margin-top: 20px;
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .store-actions .button {
+      flex: 1 1 240px;
+    }
+
+    .academy-action {
+      width: 100%;
+      margin-top: 12px;
+      min-height: 52px;
+      padding: 13px 20px;
+      border-radius: 16px;
+      background: rgba(255,255,255,0.06);
+      color: white;
+      border: 1px solid rgba(255,255,255,0.24);
+      box-shadow: none;
+    }
+
+    .academy-action-content {
+      max-width: 100%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
+
+    .academy-action-play {
+      flex: 0 0 auto;
+      font-size: 11px;
+      line-height: 1;
+    }
+
+    .academy-action-text {
+      font-size: 15px;
+      font-weight: 950;
+      letter-spacing: -0.02em;
+      line-height: 1.05;
+      text-align: center;
+    }
+
+    .academy-action:hover {
+      background: rgba(255,255,255,0.1);
+      border-color: rgba(255,255,255,0.36);
+    }
+
+    .academy-action:focus-visible {
+      outline: 3px solid rgba(255,255,255,0.9);
+      outline-offset: 3px;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 46px;
+      padding: 12px 18px;
+      border-radius: 14px;
+      font-weight: 900;
+      text-decoration: none;
+    }
+
+    .button.primary {
+      background: var(--orange);
+      color: white;
+      box-shadow: 0 10px 24px rgba(255, 122, 0, 0.25);
+    }
+
+    .button.disabled {
+      cursor: default;
+      user-select: none;
+    }
+
+    .button.secondary {
+      background: rgba(255,255,255,0.12);
+      color: white;
+      border: 1px solid rgba(255,255,255,0.24);
+    }
+
+    .button.store {
+      min-height: 52px;
+      padding: 13px 20px;
+      border-radius: 16px;
+      border: 1px solid rgba(255,255,255,0.2);
+      background: rgba(255,255,255,0.14);
+      color: white;
+      box-shadow: none;
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+    }
+
+    .button.store.primary {
+      background: linear-gradient(135deg, #ffffff 0%, #f7fbff 100%);
+      color: var(--navy);
+      border-color: rgba(255,255,255,0.55);
+      box-shadow: 0 12px 26px rgba(5, 27, 73, 0.18);
+    }
+
+    .button.store.secondary {
+      background: rgba(255,255,255,0.09);
+      color: white;
+      border-color: rgba(255,255,255,0.24);
+    }
+
+    .button .store-copy {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      line-height: 1.05;
+    }
+
+    .button .store-label {
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      opacity: 0.78;
+    }
+
+    .button .store-name {
+      font-size: 15px;
+      font-weight: 950;
+      letter-spacing: -0.02em;
+      margin-top: 2px;
+    }
+
+    .hero-media {
+      display: grid;
+      place-items: center;
+      transform: translateY(-24px);
+    }
+
+    .app-icon {
+      width: min(250px, 66vw);
+      border-radius: 28%;
+      box-shadow: 0 28px 70px rgba(0,0,0,0.28);
+      transform: rotate(0deg);
+    }
+
+    .section {
+      margin-top: 30px;
+    }
+
+    .section-title {
+      display: block;
+      margin-bottom: 18px;
+    }
+
+    .section-title h2 {
+      margin: 0;
+      font-size: clamp(28px, 4vw, 42px);
+      line-height: 1.05;
+      letter-spacing: -0.04em;
+      color: var(--navy);
+    }
+
+    .section-title p {
+      max-width: 680px;
+      color: var(--muted);
+      margin: 10px 0 0;
+      font-size: 18px;
+    }
+
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .feature {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      padding: 20px;
+      box-shadow: 0 12px 32px rgba(5, 27, 73, 0.055);
+    }
+
+    .feature .icon {
+      width: 46px;
+      height: 46px;
+      display: grid;
+      place-items: center;
+      border-radius: 16px;
+      background: #ffffff;
+      color: var(--blue);
+      font-size: 24px;
+      margin-bottom: 14px;
+      border: 2px solid var(--blue);
+      position: relative;
+    }
+
+    .feature .icon svg {
+      width: 26px;
+      height: 26px;
+      display: block;
+      fill: none;
+      stroke: currentColor;
+      stroke-width: 2.1;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .feature .icon::after {
+      content: "";
+      position: absolute;
+      right: -3px;
+      bottom: -3px;
+      width: 13px;
+      height: 13px;
+      border-radius: 999px;
+      background: var(--orange);
+      border: 3px solid #ffffff;
+    }
+
+    .feature h3 {
+      margin: 0 0 8px;
+      color: var(--blue);
+      font-size: 18px;
+      line-height: 1.15;
+    }
+
+    .feature p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .screens {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 22px;
+    }
+
+    .story-teaser {
+      margin-top: 28px;
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.96), rgba(234, 243, 255, 0.96));
+      border: 1px solid var(--line);
+      border-radius: 26px;
+      padding: clamp(22px, 4vw, 32px);
+      box-shadow: 0 14px 36px rgba(5, 27, 73, 0.06);
+      display: grid;
+      gap: 12px;
+    }
+
+    .story-teaser h2 {
+      margin: 0;
+      color: var(--navy);
+      font-size: clamp(24px, 3.4vw, 34px);
+      letter-spacing: -0.04em;
+    }
+
+    .story-teaser p {
+      margin: 0;
+      max-width: 700px;
+      color: var(--muted);
+      font-size: 17px;
+    }
+
+    .story-teaser .actions {
+      margin-top: 6px;
+    }
+
+    .follow-section {
+      margin-top: 28px;
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.98), rgba(234, 243, 255, 0.94));
+      border: 1px solid var(--line);
+      border-radius: 26px;
+      padding: clamp(22px, 4vw, 32px);
+      box-shadow: 0 14px 36px rgba(5, 27, 73, 0.06);
+      display: grid;
+      gap: 16px;
+      text-align: center;
+    }
+
+    .follow-section h2 {
+      margin: 0;
+      color: var(--navy);
+      font-size: clamp(24px, 3.4vw, 34px);
+      letter-spacing: -0.04em;
+    }
+
+    .follow-section .subtitle {
+      margin: 0;
+      color: var(--muted);
+      font-size: 17px;
+    }
+
+    .follow-section .body {
+      margin: 0 auto;
+      max-width: 760px;
+      color: var(--muted);
+      font-size: 17px;
+    }
+
+    .follow-list {
+      margin: 0 auto;
+      padding: 0;
+      list-style: none;
+      display: grid;
+      gap: 6px;
+      color: var(--muted);
+      font-size: 17px;
+    }
+
+    .follow-list li::before {
+      content: "•";
+      color: var(--orange);
+      font-weight: 900;
+      margin-right: 8px;
+    }
+
+    .social-row {
+      display: flex;
+      justify-content: center;
+      align-items: stretch;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .social-link {
+      width: 110px;
+      min-height: 120px;
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 14px 12px;
+      border-radius: 22px;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,0.9);
+      color: var(--navy);
+      text-decoration: none;
+      box-shadow: 0 10px 24px rgba(5, 27, 73, 0.05);
+      transition: transform 140ms ease, border-color 140ms ease, box-shadow 140ms ease, color 140ms ease, background-color 140ms ease;
+    }
+
+    .social-link:hover,
+    .social-link:focus-visible {
+      transform: translateY(-2px);
+      border-color: rgba(11, 102, 255, 0.34);
+      box-shadow: 0 14px 28px rgba(5, 27, 73, 0.09);
+      color: var(--blue-bright);
+      outline: none;
+    }
+
+    .social-icon {
+      width: 52px;
+      height: 52px;
+      border-radius: 18px;
+      background: linear-gradient(135deg, var(--blue-bright), var(--blue));
+      color: #fff;
+      display: grid;
+      place-items: center;
+      box-shadow: 0 12px 22px rgba(6, 70, 167, 0.18);
+      flex: 0 0 auto;
+      overflow: hidden;
+    }
+
+    .social-icon svg {
+      width: 28px;
+      height: 28px;
+      display: block;
+      fill: currentColor;
+    }
+
+    .social-icon.instagram {
+      background: linear-gradient(135deg, #f58529 0%, #feda77 26%, #dd2a7b 60%, #8134af 100%);
+    }
+
+    .social-icon.youtube {
+      background: #ff0033;
+    }
+
+    .social-icon.facebook {
+      background: #1877f2;
+    }
+
+    .social-icon.x {
+      background: #0f1419;
+    }
+
+    .social-icon.tiktok {
+      background: #111111;
+    }
+
+    .social-name {
+      font-size: 14px;
+      font-weight: 850;
+      letter-spacing: -0.02em;
+    }
+
+    .screen-card {
+      background: #061b48;
+      border-radius: 28px;
+      padding: 14px;
+      box-shadow: 0 16px 44px rgba(5, 27, 73, 0.16);
+      border: 1px solid rgba(6, 70, 167, 0.14);
+    }
+
+    .screen-card img {
+      display: block;
+      width: 100%;
+      border-radius: 16px;
+    }
+
+    .notice {
+      margin-top: 22px;
+      border-left: 5px solid var(--orange);
+      background: #fff7ed;
+      border-radius: 18px;
+      padding: 18px 20px;
+      color: var(--muted);
+      font-size: 16px;
+    }
+
+    .notice strong {
+      color: var(--ink);
+    }
+
+    footer {
+      padding: 34px 0 52px;
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    footer .links {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin: 10px 0;
+    }
+
+    @media (max-width: 940px) {
+      .hero {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-media {
+        justify-content: flex-start;
+        transform: translateY(-10px);
+      }
+
+      .app-icon {
+        width: min(188px, 64vw);
+      }
+
+      .feature-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .screens {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 560px) {
+      .feature-grid,
+      .screens {
+        grid-template-columns: 1fr;
+      }
+
+      .store-actions .button {
+        flex-basis: 100%;
+      }
+
+    }
+
+    a:focus-visible,
+    .social-link:focus-visible {
+      outline: 3px solid var(--orange);
+      outline-offset: 4px;
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .social-link { transition: none; }
+      .social-link:hover, .social-link:focus-visible { transform: none; }
+    }
+    .app-icon, .screen-card img { height: auto; }
+    .screen-card picture { display: block; }
+    .feature h3 a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+    .feature-note { color: var(--muted); font-size: 15px; max-width: 940px; margin: 18px 0 0; }
+    .story-teaser .button.secondary { color: var(--navy); background: var(--soft-blue); border-color: var(--line); }
+
+    .product-hero { grid-template-columns: 1fr; }
+    .product-hero .hero-copy { max-width: 960px; }
+    .product-hero .store-actions { max-width: 620px; }
+    .breadcrumbs { margin: 8px 0 18px; font-size: 15px; }
+    .breadcrumbs ol { display: flex; gap: 10px; flex-wrap: wrap; list-style: none; padding: 0; margin: 0; }
+    .breadcrumbs li + li::before { content: "›"; margin-right: 10px; }
+    .breadcrumbs a, .product-copy a, .product-next a { color: var(--blue); text-underline-offset: 3px; }
+    .product-section { margin-top: 28px; padding: clamp(22px, 4vw, 32px); border-radius: 26px; border: 1px solid var(--line); background: var(--card); box-shadow: 0 12px 32px rgba(5,27,73,.055); display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 330px); gap: 28px; align-items: start; }
+    .product-copy h2, .product-next h2 { font-size: clamp(24px, 3vw, 34px); line-height: 1.15; color: var(--navy); margin: 0 0 14px; letter-spacing: -.03em; }
+    .product-copy h3 { color: var(--blue); font-size: 20px; margin: 26px 0 10px; }
+    .product-copy p, .product-next p { color: var(--muted); font-size: 17px; margin: 0 0 16px; }
+    .product-figure { width: 100%; max-width: 330px; margin: 0 auto; }
+    .product-figure figcaption { color: white; font-size: 14px; margin: 12px 2px 2px; }
+    .product-next { margin-top: 28px; padding: clamp(22px,4vw,32px); border-radius: 26px; background: var(--soft-blue); border: 1px solid var(--line); }
+    .product-next .store-actions { max-width: 620px; }
+    .product-next .button.store.secondary { background: var(--navy); color: white; }
+    @media (max-width: 940px) { .product-section { grid-template-columns: 1fr; } }
+  </style>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://cardfinderlive.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Find Cards",
+      "item": "https://cardfinderlive.com/find-cards/"
+    }
+  ]
+}
+  </script>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <a class="brand" href="/" aria-label="CardFinder Live home">
+        <span>CardFinder<span>Live</span></span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <a href="/">Home</a>
+        <a href="/find-cards/" aria-current="page">Find Cards</a>
+        <a href="/card-shows/">Card Shows</a>
+        <a href="/our-story/">Our Story</a>
+        <a href="https://youtube.com/playlist?list=PLBURvTkWW9UY&amp;si=6SZ5YaF1Pc_MpFmB" target="_blank" rel="noopener noreferrer">Academy</a>
+        <a href="/support/">Support</a>
+      </nav>
+    </header>
+    <main>
+      <nav class="breadcrumbs" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li aria-current="page">Find Cards</li></ol></nav>
+      <section class="hero product-hero">
+        <div class="hero-copy"><h1>Find the cards you're chasing.</h1><p class="lead">Start with a card. Explore the collector, the location, and whether an in-person deal makes sense.</p>
+          <div class="store-actions" aria-label="Download CardFinder Live">
+            <a class="button store primary" href="https://apps.apple.com/app/cardfinder-live/id6757400880" rel="noopener">
+              <span class="store-copy">
+                <span class="store-label">Download on the</span>
+                <span class="store-name">App Store</span>
+              </span>
+            </a>
+            <a class="button store secondary" href="https://play.google.com/store/apps/details?id=com.cardfinderlive.runner" rel="noopener">
+              <span class="store-copy">
+                <span class="store-label">Get it on</span>
+                <span class="store-name">Google Play</span>
+              </span>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="product-section"><div class="product-copy"><h2>Start with the card you want</h2>
+<p>A card search doesn't have to begin with a particular show or shop. In CardFinder Live, you can look for cards shared by collectors, then consider where a match might lead. Actual card discovery happens inside the app; this website explains how to use it.</p>
+<h3>Search nearby, statewide, or nationwide</h3>
+<p>Use Near Me when a local opportunity matters, My State for a wider look, or Nationwide to search more broadly. A wider search can help you explore possibilities; it doesn't mean every card is listed or that every result is practical to collect in person.</p>
+<h3>Keep track of what you're chasing</h3>
+<p>Save a search so you can revisit that interest, and keep individual cards on your Watchlist. These are ways to preserve what matters to you, not a promise that a match will appear or that a card will remain available.</p></div><figure class="screen-card product-figure"><picture>
+          <source type="image/webp" srcset="/assets/optimized/screenshots/01_find_cards-480.webp 480w, /assets/optimized/screenshots/01_find_cards-960.webp 960w, /assets/optimized/screenshots/01_find_cards-1242.webp 1242w" sizes="(max-width: 410px) calc(100vw - 108px), 300px" />
+          <img src="/assets/screenshots/final-ios-20260818/01_find_cards.png" width="1242" height="2688" loading="lazy" decoding="async" alt="Card search with Nationwide, My State, and Near Me filters and a saved-search option." />
+        </picture><figcaption>Search in the app and choose a geographic scope that fits your plans.</figcaption></figure></section>
+<section class="product-section"><div class="product-copy"><h2>Look beyond the listing</h2>
+<p>Open the card and explore the collector connected to it. The details and available profile context help you decide what to ask next. Before making plans, confirm that the card is still available and discuss its condition, the asking price, or a possible trade directly.</p>
+<h3>Shows and shops add real-world context</h3>
+<p>A match may connect with a show you're planning to attend. You can also explore local card shops as places to visit or possible meetup options. Finding a shop in the app does not mean its inventory is searchable. <a href="/card-shows/">See how card-show discovery and participating inventory work.</a></p>
+<h3>Consider whether meeting up makes sense</h3>
+<p>Meetup feasibility and Halfway Meetup Ideas can help you explore possible public places, including shops and shows. They are suggestions, not guaranteed safe venues or precise directions to another person's live location. Confirm that a suggested shop is open before you go.</p></div><figure class="screen-card product-figure"><picture>
+          <source type="image/webp" srcset="/assets/optimized/screenshots/03_card_search_meetup-480.webp 480w, /assets/optimized/screenshots/03_card_search_meetup-960.webp 960w, /assets/optimized/screenshots/03_card_search_meetup-1242.webp 1242w" sizes="(max-width: 410px) calc(100vw - 108px), 300px" />
+          <img src="/assets/screenshots/final-ios-20260818/03_card_search_meetup.png" width="1242" height="2688" loading="lazy" decoding="async" alt="Halfway Meetup Ideas showing suggested card shops and card shows." />
+        </picture><figcaption>Explore public meetup ideas; the people involved choose the final arrangements.</figcaption></figure></section>
+<section class="product-section"><div class="product-copy"><h2>Turn interest into a conversation</h2>
+<p>When messaging access is available, ask questions and agree on the details before traveling. Decide together on the time, public place, and terms of an in-person buy, sale, or trade. You can choose another public location if the suggested spots don't work for you.</p>
+<p>CardFinder Live helps with discovery and coordination. It does not process per-card checkout, shipping, escrow, or payment protection, and it does not guarantee card authenticity or completion of a deal. Cards and event inventory depend on what people choose to share and their current eligibility.</p>
+<p>The aim is straightforward: find a card, understand the opportunity, and decide whether to connect. You don't have to be at a show to start.</p></div><figure class="screen-card product-figure"><picture>
+          <source type="image/webp" srcset="/assets/optimized/screenshots/09_message_negotiate_deal-480.webp 480w, /assets/optimized/screenshots/09_message_negotiate_deal-960.webp 960w, /assets/optimized/screenshots/09_message_negotiate_deal-1242.webp 1242w" sizes="(max-width: 410px) calc(100vw - 108px), 300px" />
+          <img src="/assets/screenshots/final-ios-20260818/09_message_negotiate_deal.png" width="1242" height="2688" loading="lazy" decoding="async" alt="A conversation about a card and arrangements for an in-person meetup." />
+        </picture><figcaption>Messaging supports questions and meetup coordination when access is available.</figcaption></figure></section>
+      <section class="product-next">
+        <h2>Explore CardFinder Live</h2>
+        <p>Download the app to get started. <a href="/our-story/">Read Steven's story</a> or <a href="/support/">contact Support</a> if you have a question.</p>
+        <div class="store-actions" aria-label="Download CardFinder Live">
+            <a class="button store primary" href="https://apps.apple.com/app/cardfinder-live/id6757400880" rel="noopener">
+              <span class="store-copy">
+                <span class="store-label">Download on the</span>
+                <span class="store-name">App Store</span>
+              </span>
+            </a>
+            <a class="button store secondary" href="https://play.google.com/store/apps/details?id=com.cardfinderlive.runner" rel="noopener">
+              <span class="store-copy">
+                <span class="store-label">Get it on</span>
+                <span class="store-name">Google Play</span>
+              </span>
+            </a>
+          </div>
+      </section>
+    </main>
+    <footer>
+      <div class="links">
+        <a href="/find-cards/">Find Cards</a>
+        <a href="/card-shows/">Card Shows</a>
+        <a href="/our-story/">Our Story</a>
+        <a href="/support/">Support</a>
+        <a href="/privacy/">Privacy</a>
+        <a href="/terms/">Terms</a>
+        <a href="mailto:support@cardfinderlive.com">support@cardfinderlive.com</a>
+      </div>
+      <div>© 2026 CardFinder Live</div>
+    </footer>
+  </div>
+<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "7a804480b1bb4df3acd33749e4597dc6"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>

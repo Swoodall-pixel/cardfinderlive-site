@@ -3,8 +3,25 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>CardFinder Live</title>
-  <meta name="description" content="CardFinder Live is a real-world discovery platform built for card collectors. Find cards, find shows, find shops, connect with collectors, and make real-world deals." />
+  <title>Find Sports Cards &amp; Connect with Collectors | CardFinder Live</title>
+  <meta name="description" content="Find sports cards and connect with collectors nearby or nationwide. Save searches, explore card shows and shops, and plan real-world deals with CardFinder Live." />
+  <link rel="canonical" href="https://cardfinderlive.com/" />
+  <link rel="icon" type="image/png" sizes="48x48" href="/assets/favicon-48.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png" />
+  <meta property="og:title" content="Find Sports Cards &amp; Connect with Collectors | CardFinder Live" />
+  <meta property="og:description" content="Find sports cards and connect with collectors nearby or nationwide. Save searches, explore card shows and shops, and plan real-world deals with CardFinder Live." />
+  <meta property="og:url" content="https://cardfinderlive.com/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="CardFinder Live" />
+  <meta property="og:image" content="https://cardfinderlive.com/assets/social/cardfinder-live-1200x630.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="CardFinder Live — Find cards. Find shows. Make real-world deals." />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Find Sports Cards &amp; Connect with Collectors | CardFinder Live" />
+  <meta name="twitter:description" content="Find sports cards and connect with collectors nearby or nationwide. Save searches, explore card shows and shops, and plan real-world deals with CardFinder Live." />
+  <meta name="twitter:image" content="https://cardfinderlive.com/assets/social/cardfinder-live-1200x630.jpg" />
+  <meta name="twitter:image:alt" content="CardFinder Live — Find cards. Find shows. Make real-world deals." />
   <style>
     :root {
       color-scheme: light;
@@ -626,7 +643,68 @@
       }
 
     }
+
+    a:focus-visible,
+    .social-link:focus-visible {
+      outline: 3px solid var(--orange);
+      outline-offset: 4px;
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .social-link { transition: none; }
+      .social-link:hover, .social-link:focus-visible { transform: none; }
+    }
+    .app-icon, .screen-card img { height: auto; }
+    .screen-card picture { display: block; }
+    .feature h3 a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+    .feature-note { color: var(--muted); font-size: 15px; max-width: 940px; margin: 18px 0 0; }
+    .story-teaser .button.secondary { color: var(--navy); background: var(--soft-blue); border-color: var(--line); }
   </style>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://cardfinderlive.com/#organization",
+      "name": "CardFinder Live",
+      "url": "https://cardfinderlive.com/",
+      "logo": "https://cardfinderlive.com/assets/app-icon.png",
+      "email": "support@cardfinderlive.com"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://cardfinderlive.com/#website",
+      "name": "CardFinder Live",
+      "url": "https://cardfinderlive.com/",
+      "inLanguage": "en",
+      "publisher": {
+        "@id": "https://cardfinderlive.com/#organization"
+      }
+    },
+    {
+      "@type": "MobileApplication",
+      "@id": "https://cardfinderlive.com/#app",
+      "name": "CardFinder Live",
+      "description": "A real-world card discovery app for finding cards and collectors, exploring shows and shops, and coordinating in-person deals.",
+      "applicationCategory": "SportsApplication",
+      "operatingSystem": [
+        "iOS",
+        "Android"
+      ],
+      "url": "https://cardfinderlive.com/",
+      "image": "https://cardfinderlive.com/assets/app-icon.png",
+      "publisher": {
+        "@id": "https://cardfinderlive.com/#organization"
+      },
+      "downloadUrl": [
+        "https://apps.apple.com/app/cardfinder-live/id6757400880",
+        "https://play.google.com/store/apps/details?id=com.cardfinderlive.runner"
+      ]
+    }
+  ]
+}
+  </script>
 </head>
 <body>
   <div class="wrap">
@@ -636,11 +714,10 @@
       </a>
       <nav aria-label="Primary navigation">
         <a href="/" aria-current="page">Home</a>
+        <a href="/find-cards/">Find Cards</a>
+        <a href="/card-shows/">Card Shows</a>
         <a href="/our-story/">Our Story</a>
         <a href="https://youtube.com/playlist?list=PLBURvTkWW9UY&amp;si=6SZ5YaF1Pc_MpFmB" target="_blank" rel="noopener noreferrer">Academy</a>
-        <a href="#follow-us">Follow Us</a>
-        <a href="/privacy/">Privacy</a>
-        <a href="/terms/">Terms</a>
         <a href="/support/">Support</a>
       </nav>
     </header>
@@ -650,8 +727,8 @@
         <div class="hero-copy">
           <h1><span class="phrase">Find cards.</span> <span class="phrase">Find shows.</span> <span class="orange">Make real-world deals.</span></h1>
           <p class="lead">
-            Find the cards you're chasing—whether they're at a card show, a local shop, or with another collector.
-            CardFinder Live helps collectors discover cards, find shows and shops, and connect to make real-world deals.
+            Find sports cards and other trading cards shared by collectors nearby, in your state, or nationwide.
+            Save what you're chasing, explore card shows and shops, and connect with collectors to plan an in-person deal.
           </p>
           <div class="store-actions" aria-label="Download CardFinder Live">
             <a class="button store primary" href="https://apps.apple.com/app/cardfinder-live/id6757400880" rel="noopener">
@@ -675,29 +752,11 @@
           </a>
         </div>
         <div class="hero-media" aria-label="CardFinder Live app icon">
-          <img class="app-icon" src="/assets/app-icon.png" alt="CardFinder Live app icon" />
+          <picture>
+            <source type="image/webp" srcset="/assets/optimized/app-icon-256.webp 256w, /assets/optimized/app-icon-512.webp 512w" sizes="(max-width: 940px) 188px, 250px" />
+            <img class="app-icon" src="/assets/app-icon.png" alt="CardFinder Live app icon" width="1024" height="1024" loading="eager" decoding="async" />
+          </picture>
         </div>
-      </section>
-
-      <section class="section">
-        <div class="section-title">
-          <h2>See how it works.</h2>
-          <p>Find cards. Find shows. Make the deal.</p>
-        </div>
-
-        <div class="screens">
-          <div class="screen-card"><img src="/assets/screenshots/final-ios-20260818/01_find_cards.png" alt="1. Find the cards you’re chasing." title="1. Find the cards you’re chasing." /></div>
-          <div class="screen-card"><img src="/assets/screenshots/final-ios-20260818/02_find_card_show.png" alt="2. Find your next card show." title="2. Find your next card show." /></div>
-          <div class="screen-card"><img src="/assets/screenshots/final-ios-20260818/03_card_search_meetup.png" alt="3. Turn a card search into a meetup." title="3. Turn a card search into a meetup." /></div>
-          <div class="screen-card"><img src="/assets/screenshots/final-ios-20260818/04_know_whats_at_show.png" alt="4. Know what’s at the show." title="4. Know what’s at the show." /></div>
-          <div class="screen-card"><img src="/assets/screenshots/final-ios-20260818/05_collectors_bringing.png" alt="5. See what collectors are bringing." title="5. See what collectors are bringing." /></div>
-          <div class="screen-card"><img src="/assets/screenshots/final-ios-20260818/06_connect_meet_deal.png" alt="6. Connect. Meet up. Make the deal." title="6. Connect. Meet up. Make the deal." /></div>
-          <div class="screen-card"><img src="/assets/screenshots/final-ios-20260818/07_go_live_at_show.png" alt="7. Go live at the show." title="7. Go live at the show." /></div>
-          <div class="screen-card"><img src="/assets/screenshots/final-ios-20260818/08_shows_shops_near_you.png" alt="8. Find shows and shops near you." title="8. Find shows and shops near you." /></div>
-          <div class="screen-card"><img src="/assets/screenshots/final-ios-20260818/09_message_negotiate_deal.png" alt="9. Message. Negotiate. Make the deal." title="9. Message. Negotiate. Make the deal." /></div>
-          <div class="screen-card"><img src="/assets/screenshots/final-ios-20260818/10_plan_card_show_trip.png" alt="10. Plan your next card show trip." title="10. Plan your next card show trip." /></div>
-        </div>
-
       </section>
 
       <section class="section">
@@ -708,14 +767,14 @@
 
         <div class="feature-grid">
           <article class="feature">
-            <div class="icon">⌕</div>
-            <h3>Find Cards</h3>
-            <p>Discover cards from collectors, shops, and live shows.</p>
+            <div class="icon" aria-hidden="true">⌕</div>
+            <h3><a href="/find-cards/">Find Cards</a></h3>
+            <p>Search cards shared by collectors nearby, in your state, or nationwide.</p>
           </article>
           <article class="feature">
-            <div class="icon">★</div>
-            <h3>Find Shows</h3>
-            <p>Discover card shows near you or across the country.</p>
+            <div class="icon" aria-hidden="true">★</div>
+            <h3><a href="/card-shows/">Find Shows</a></h3>
+            <p>Explore card shows near you or across the country, save events, and plan a trip.</p>
           </article>
           <article class="feature">
             <div class="icon" aria-hidden="true">
@@ -729,24 +788,76 @@
               </svg>
             </div>
             <h3>Find Card Shops</h3>
-            <p>Find local card shops and more places to collect.</p>
+            <p>Discover local card shops and explore their details.</p>
           </article>
           <article class="feature">
-            <div class="icon">●</div>
+            <div class="icon" aria-hidden="true">●</div>
             <h3>Go Live</h3>
-            <p>Share your cards at a show so collectors there can find them.</p>
+            <p>At eligible shows, pass a proximity check to make eligible cards discoverable to attendees.</p>
           </article>
           <article class="feature">
-            <div class="icon">↔</div>
+            <div class="icon" aria-hidden="true">↔</div>
             <h3>Connect with Collectors</h3>
-            <p>Message collectors and coordinate real-world deals.</p>
+            <p>Message when access is available, explore meetup ideas, and coordinate in-person buying, selling, or trading.</p>
           </article>
           <article class="feature">
-            <div class="icon">▣</div>
+            <div class="icon" aria-hidden="true">▣</div>
             <h3>Build Your Collection</h3>
-            <p>Manage your cards, watchlist, and saved searches in one place.</p>
+            <p>Manage your cards, keep a Watchlist, and save searches for cards you're chasing.</p>
           </article>
         </div>
+        <p class="feature-note">Participating collectors can share cards they expect to bring before a show and eligible inventory when Live. Availability can change—confirm the card and meetup details directly. CardFinder Live does not process per-card checkout, shipping, or payment protection.</p>
+      </section>
+
+      <section class="section">
+        <div class="section-title">
+          <h2>See how it works.</h2>
+          <p>Find cards. Find shows. Make the deal.</p>
+        </div>
+
+        <div class="screens">
+          <div class="screen-card"><picture>
+              <source type="image/webp" srcset="/assets/optimized/screenshots/01_find_cards-480.webp 480w, /assets/optimized/screenshots/01_find_cards-960.webp 960w, /assets/optimized/screenshots/01_find_cards-1242.webp 1242w" sizes="(max-width: 940px) calc(100vw - 62px), (max-width: 1152px) calc(50vw - 57px), 519px" />
+              <img src="/assets/screenshots/final-ios-20260818/01_find_cards.png" alt="Card search with Nationwide, My State, and Near Me filters and a saved-search option." width="1242" height="2688" loading="lazy" decoding="async" />
+            </picture></div>
+          <div class="screen-card"><picture>
+              <source type="image/webp" srcset="/assets/optimized/screenshots/02_find_card_show-480.webp 480w, /assets/optimized/screenshots/02_find_card_show-960.webp 960w, /assets/optimized/screenshots/02_find_card_show-1242.webp 1242w" sizes="(max-width: 940px) calc(100vw - 62px), (max-width: 1152px) calc(50vw - 57px), 519px" />
+              <img src="/assets/screenshots/final-ios-20260818/02_find_card_show.png" alt="Card Show map with geographic filters, saved shows, and a trip-planning option." width="1242" height="2688" loading="lazy" decoding="async" />
+            </picture></div>
+          <div class="screen-card"><picture>
+              <source type="image/webp" srcset="/assets/optimized/screenshots/03_card_search_meetup-480.webp 480w, /assets/optimized/screenshots/03_card_search_meetup-960.webp 960w, /assets/optimized/screenshots/03_card_search_meetup-1242.webp 1242w" sizes="(max-width: 940px) calc(100vw - 62px), (max-width: 1152px) calc(50vw - 57px), 519px" />
+              <img src="/assets/screenshots/final-ios-20260818/03_card_search_meetup.png" alt="Halfway Meetup Ideas showing suggested card shops and card shows." width="1242" height="2688" loading="lazy" decoding="async" />
+            </picture></div>
+          <div class="screen-card"><picture>
+              <source type="image/webp" srcset="/assets/optimized/screenshots/04_know_whats_at_show-480.webp 480w, /assets/optimized/screenshots/04_know_whats_at_show-960.webp 960w, /assets/optimized/screenshots/04_know_whats_at_show-1242.webp 1242w" sizes="(max-width: 940px) calc(100vw - 62px), (max-width: 1152px) calc(50vw - 57px), 519px" />
+              <img src="/assets/screenshots/final-ios-20260818/04_know_whats_at_show.png" alt="Event details with a saved-show checklist and an option to browse expected cards." width="1242" height="2688" loading="lazy" decoding="async" />
+            </picture></div>
+          <div class="screen-card"><picture>
+              <source type="image/webp" srcset="/assets/optimized/screenshots/05_collectors_bringing-480.webp 480w, /assets/optimized/screenshots/05_collectors_bringing-960.webp 960w, /assets/optimized/screenshots/05_collectors_bringing-1242.webp 1242w" sizes="(max-width: 940px) calc(100vw - 62px), (max-width: 1152px) calc(50vw - 57px), 519px" />
+              <img src="/assets/screenshots/final-ios-20260818/05_collectors_bringing.png" alt="Expected cards at a show, including saved-search matches and Watchlist cards." width="1242" height="2688" loading="lazy" decoding="async" />
+            </picture></div>
+          <div class="screen-card"><picture>
+              <source type="image/webp" srcset="/assets/optimized/screenshots/06_connect_meet_deal-480.webp 480w, /assets/optimized/screenshots/06_connect_meet_deal-960.webp 960w, /assets/optimized/screenshots/06_connect_meet_deal-1242.webp 1242w" sizes="(max-width: 940px) calc(100vw - 62px), (max-width: 1152px) calc(50vw - 57px), 519px" />
+              <img src="/assets/screenshots/final-ios-20260818/06_connect_meet_deal.png" alt="Card detail with meetup feasibility and an option to message the seller." width="1242" height="2688" loading="lazy" decoding="async" />
+            </picture></div>
+          <div class="screen-card"><picture>
+              <source type="image/webp" srcset="/assets/optimized/screenshots/07_go_live_at_show-480.webp 480w, /assets/optimized/screenshots/07_go_live_at_show-960.webp 960w, /assets/optimized/screenshots/07_go_live_at_show-1242.webp 1242w" sizes="(max-width: 940px) calc(100vw - 62px), (max-width: 1152px) calc(50vw - 57px), 519px" />
+              <img src="/assets/screenshots/final-ios-20260818/07_go_live_at_show.png" alt="Live event participation and searchable cards from participating collectors." width="1242" height="2688" loading="lazy" decoding="async" />
+            </picture></div>
+          <div class="screen-card"><picture>
+              <source type="image/webp" srcset="/assets/optimized/screenshots/08_shows_shops_near_you-480.webp 480w, /assets/optimized/screenshots/08_shows_shops_near_you-960.webp 960w, /assets/optimized/screenshots/08_shows_shops_near_you-1242.webp 1242w" sizes="(max-width: 940px) calc(100vw - 62px), (max-width: 1152px) calc(50vw - 57px), 519px" />
+              <img src="/assets/screenshots/final-ios-20260818/08_shows_shops_near_you.png" alt="Nearby card show and card shop listings on the Finder home screen." width="1242" height="2688" loading="lazy" decoding="async" />
+            </picture></div>
+          <div class="screen-card"><picture>
+              <source type="image/webp" srcset="/assets/optimized/screenshots/09_message_negotiate_deal-480.webp 480w, /assets/optimized/screenshots/09_message_negotiate_deal-960.webp 960w, /assets/optimized/screenshots/09_message_negotiate_deal-1242.webp 1242w" sizes="(max-width: 940px) calc(100vw - 62px), (max-width: 1152px) calc(50vw - 57px), 519px" />
+              <img src="/assets/screenshots/final-ios-20260818/09_message_negotiate_deal.png" alt="A conversation about a card and arrangements for an in-person meetup." width="1242" height="2688" loading="lazy" decoding="async" />
+            </picture></div>
+          <div class="screen-card"><picture>
+              <source type="image/webp" srcset="/assets/optimized/screenshots/10_plan_card_show_trip-480.webp 480w, /assets/optimized/screenshots/10_plan_card_show_trip-960.webp 960w, /assets/optimized/screenshots/10_plan_card_show_trip-1242.webp 1242w" sizes="(max-width: 940px) calc(100vw - 62px), (max-width: 1152px) calc(50vw - 57px), 519px" />
+              <img src="/assets/screenshots/final-ios-20260818/10_plan_card_show_trip.png" alt="Card show trip results for a selected destination and date." width="1242" height="2688" loading="lazy" decoding="async" />
+            </picture></div>
+        </div>
+
       </section>
 
       <section class="story-teaser" aria-labelledby="story-teaser-title">
@@ -821,10 +932,12 @@
 
     <footer>
       <div class="links">
+        <a href="/find-cards/">Find Cards</a>
+        <a href="/card-shows/">Card Shows</a>
         <a href="/our-story/">Our Story</a>
-        <a href="/privacy/">Privacy Policy</a>
-        <a href="/terms/">Terms of Service</a>
         <a href="/support/">Support</a>
+        <a href="/privacy/">Privacy</a>
+        <a href="/terms/">Terms</a>
         <a href="mailto:support@cardfinderlive.com">support@cardfinderlive.com</a>
       </div>
       <div>© 2026 CardFinder Live</div>
