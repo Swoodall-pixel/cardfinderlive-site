@@ -2,6 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://cardfinderlive.com/</loc>
+    <lastmod>2026-11-06</lastmod>
   </url>
   <url>
     <loc>https://cardfinderlive.com/our-story/</loc>
@@ -14,5 +15,13 @@
   </url>
   <url>
     <loc>https://cardfinderlive.com/card-shows/</loc>
+  </url>
+  <url>
+    <loc>https://cardfinderlive.com/card-show-calendar/</loc>
+    <lastmod>2026-11-06</lastmod>
+  </url>
+  <url>
+    <loc>https://cardfinderlive.com/partners/</loc>
+    <lastmod>2026-11-06</lastmod>
   </url>
 </urlset>
