@@ -659,6 +659,38 @@
     .feature h3 a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: 3px; }
     .feature-note { color: var(--muted); font-size: 15px; max-width: 940px; margin: 18px 0 0; }
     .story-teaser .button.secondary { color: var(--navy); background: var(--soft-blue); border-color: var(--line); }
+
+    .qr-card {
+      display: none;
+    }
+
+    @media (min-width: 941px) {
+      .qr-card {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        margin-top: 16px;
+        background: #ffffff;
+        border-radius: 18px;
+        padding: 12px 16px;
+        max-width: 360px;
+      }
+
+      .qr-card img {
+        width: 84px;
+        height: 84px;
+        flex: 0 0 auto;
+      }
+
+      .qr-caption {
+        color: var(--navy);
+        font-weight: 800;
+        font-size: 14px;
+        line-height: 1.35;
+        margin: 0;
+        text-align: left;
+      }
+    }
   </style>
   <script type="application/ld+json">
 {
@@ -743,6 +775,10 @@
                 <span class="store-name">Google Play</span>
               </span>
             </a>
+          </div>
+          <div class="qr-card">
+            <img src="/assets/qr-app.png" alt="QR code to download the CardFinder Live app" width="84" height="84" />
+            <p class="qr-caption">Reading on a computer? Scan with your phone to get the app.</p>
           </div>
           <a class="button academy-action" href="https://youtube.com/playlist?list=PLBURvTkWW9UY&amp;si=6SZ5YaF1Pc_MpFmB" target="_blank" rel="noopener noreferrer">
             <span class="academy-action-content">
