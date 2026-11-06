@@ -109,6 +109,112 @@
       .social-link { transition: none; }
       .social-link:hover, .social-link:focus-visible { transform: none; }
     }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 46px;
+      padding: 12px 18px;
+      border-radius: 14px;
+      font-weight: 900;
+      text-decoration: none;
+    }
+
+    .button.store {
+      min-height: 52px;
+      padding: 13px 20px;
+      border-radius: 16px;
+      border: 1px solid rgba(255,255,255,0.2);
+      background: rgba(255,255,255,0.14);
+      color: white;
+      box-shadow: none;
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+    }
+
+    .button.store.primary {
+      background: linear-gradient(135deg, #ffffff 0%, #f7fbff 100%);
+      color: var(--navy);
+      border-color: rgba(255,255,255,0.55);
+      box-shadow: 0 12px 26px rgba(5, 27, 73, 0.18);
+    }
+
+    .button.store.secondary {
+      background: rgba(255,255,255,0.09);
+      color: white;
+      border-color: rgba(255,255,255,0.24);
+    }
+
+    .button .store-copy {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      line-height: 1.05;
+    }
+
+    .button .store-label {
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      opacity: 0.78;
+    }
+
+    .button .store-name {
+      font-size: 15px;
+      font-weight: 950;
+      letter-spacing: -0.02em;
+      margin-top: 2px;
+    }
+
+    .store-actions {
+      margin-top: 20px;
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .store-actions .button {
+      flex: 1 1 240px;
+    }
+
+    .support-cta {
+      margin-top: 28px;
+      padding: clamp(22px, 4vw, 32px);
+      border-radius: 26px;
+      background: #eaf3ff;
+      border: 1px solid var(--line);
+    }
+
+    .support-cta h2 {
+      font-size: clamp(24px, 3vw, 34px);
+      line-height: 1.15;
+      color: var(--navy);
+      margin: 0 0 14px;
+      letter-spacing: -0.03em;
+    }
+
+    .support-cta p {
+      color: var(--muted);
+      font-size: 17px;
+      margin: 0 0 16px;
+    }
+
+    .support-cta .store-actions {
+      max-width: 620px;
+    }
+
+    .support-cta .button.store.secondary {
+      background: var(--navy);
+      color: white;
+    }
+
+    @media (max-width: 560px) {
+      .store-actions .button {
+        flex-basis: 100%;
+      }
+    }
   </style>
 </head>
 <body>
@@ -190,6 +296,24 @@
           If your question isn't covered above, just use the contact information at the top of this page and we'll be happy to help.
         </p>
       </div>
+      <section class="support-cta">
+        <h2>Get CardFinder Live</h2>
+        <p>Don't have the app yet? Download it and start finding cards, shows, and shops near you.</p>
+        <div class="store-actions" aria-label="Download CardFinder Live">
+          <a class="button store primary" href="https://apps.apple.com/app/cardfinder-live/id6757400880" rel="noopener">
+            <span class="store-copy">
+              <span class="store-label">Download on the</span>
+              <span class="store-name">App Store</span>
+            </span>
+          </a>
+          <a class="button store secondary" href="https://play.google.com/store/apps/details?id=com.cardfinderlive.runner" rel="noopener">
+            <span class="store-copy">
+              <span class="store-label">Get it on</span>
+              <span class="store-name">Google Play</span>
+            </span>
+          </a>
+        </div>
+      </section>
     </main>
 
     <footer>
