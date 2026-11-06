@@ -691,6 +691,46 @@
         text-align: left;
       }
     }
+
+    .proof-strip {
+      margin-top: 30px;
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 26px;
+      padding: clamp(20px, 3.5vw, 30px);
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+      text-align: center;
+    }
+
+    .proof-stat .proof-number {
+      display: block;
+      font-size: clamp(26px, 4vw, 38px);
+      font-weight: 950;
+      letter-spacing: -0.03em;
+      color: var(--navy);
+      line-height: 1.05;
+    }
+
+    .proof-stat .proof-label {
+      display: block;
+      margin-top: 4px;
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--muted);
+    }
+
+    @media (max-width: 560px) {
+      .proof-strip {
+        gap: 10px;
+        padding: 18px 12px;
+      }
+
+      .proof-stat .proof-label {
+        font-size: 12px;
+      }
+    }
   </style>
   <script type="application/ld+json">
 {
@@ -792,6 +832,21 @@
             <source type="image/webp" srcset="/assets/optimized/app-icon-256.webp 256w, /assets/optimized/app-icon-512.webp 512w" sizes="(max-width: 940px) 188px, 250px" />
             <img class="app-icon" src="/assets/app-icon.png" alt="CardFinder Live app icon" width="1024" height="1024" loading="eager" decoding="async" />
           </picture>
+        </div>
+      </section>
+
+      <section class="proof-strip" aria-label="CardFinder Live by the numbers">
+        <div class="proof-stat">
+          <span class="proof-number">3,000+</span>
+          <span class="proof-label">Card shows listed</span>
+        </div>
+        <div class="proof-stat">
+          <span class="proof-number">3,000+</span>
+          <span class="proof-label">Card shops listed</span>
+        </div>
+        <div class="proof-stat">
+          <span class="proof-number">Free</span>
+          <span class="proof-label">To download</span>
         </div>
       </section>
 
