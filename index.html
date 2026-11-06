@@ -731,6 +731,8 @@
         font-size: 12px;
       }
     }
+  
+    .demo-card video { display: block; width: 100%; border-radius: 16px; background: #000; aspect-ratio: 9 / 16; }
   </style>
   <script type="application/ld+json">
 {
@@ -820,7 +822,7 @@
             <img src="/assets/qr-app.png" alt="QR code to download the CardFinder Live app" width="84" height="84" />
             <p class="qr-caption">Reading on a computer? Scan with your phone to get the app.</p>
           </div>
-          <a class="button academy-action" href="https://youtube.com/playlist?list=PLBURvTkWW9UY&amp;si=6SZ5YaF1Pc_MpFmB" target="_blank" rel="noopener noreferrer">
+          <a class="button academy-action" href="#see-how-it-works">
             <span class="academy-action-content">
               <span class="academy-action-play" aria-hidden="true">&#9654;</span>
               <span class="academy-action-text">See How CardFinder Live Works</span>
@@ -900,13 +902,18 @@
         <p class="feature-note">Participating collectors can share cards they expect to bring before a show and eligible inventory when Live. Availability can change—confirm the card and meetup details directly. CardFinder Live does not process per-card checkout, shipping, or payment protection.</p>
       </section>
 
-      <section class="section">
+      <section class="section" id="see-how-it-works">
         <div class="section-title">
           <h2>See how it works.</h2>
           <p>Find cards. Find shows. Make the deal.</p>
         </div>
 
         <div class="screens">
+          <div class="screen-card demo-card">
+            <video controls preload="none" playsinline poster="/assets/video/deals-before-doors-open-poster.jpg" aria-label="Deals Before Doors Open — a 30-second CardFinder Live film about lining up deals before a card show">
+              <source src="/assets/video/deals-before-doors-open.mp4" type="video/mp4">
+            </video>
+          </div>
           <div class="screen-card"><picture>
               <source type="image/webp" srcset="/assets/optimized/screenshots/01_find_cards-480.webp 480w, /assets/optimized/screenshots/01_find_cards-960.webp 960w, /assets/optimized/screenshots/01_find_cards-1242.webp 1242w" sizes="(max-width: 940px) calc(100vw - 62px), (max-width: 1152px) calc(50vw - 57px), 519px" />
               <img src="/assets/screenshots/final-ios-20260818/01_find_cards.png" alt="Card search with Nationwide, My State, and Near Me filters and a saved-search option." width="1242" height="2688" loading="lazy" decoding="async" />
