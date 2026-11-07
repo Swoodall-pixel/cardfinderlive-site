@@ -1,0 +1,1400 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Card Shows in Virginia — 85 Upcoming Shows | CardFinder Live</title>
+  <meta name="description" content="85 upcoming card shows in Virginia over the next 90 days — dates, cities, and venues. See which cards will be there in the CardFinder Live app." />
+  <link rel="canonical" href="https://cardfinderlive.com/card-shows/" />
+  <link rel="icon" type="image/png" sizes="48x48" href="/assets/favicon-48.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png" />
+  <meta property="og:title" content="Find Card Shows &amp; Explore Participating Cards | CardFinder Live" />
+  <meta property="og:description" content="Discover card shows, save events, and plan trips. Explore cards participants expect to bring and eligible Live inventory where available in CardFinder Live." />
+  <meta property="og:url" content="https://cardfinderlive.com/card-shows/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="CardFinder Live" />
+  <meta property="og:image" content="https://cardfinderlive.com/assets/social/cardfinder-live-1200x630.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="CardFinder Live — Find cards. Find shows. Make real-world deals." />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Find Card Shows &amp; Explore Participating Cards | CardFinder Live" />
+  <meta name="twitter:description" content="Discover card shows, save events, and plan trips. Explore cards participants expect to bring and eligible Live inventory where available in CardFinder Live." />
+  <meta name="twitter:image" content="https://cardfinderlive.com/assets/social/cardfinder-live-1200x630.jpg" />
+  <meta name="twitter:image:alt" content="CardFinder Live — Find cards. Find shows. Make real-world deals." />
+  <style>
+    :root {
+      color-scheme: light;
+      --navy: #051b49;
+      --blue: #0646a7;
+      --blue-bright: #0b66ff;
+      --orange: #ff7a00;
+      --ink: #101828;
+      --muted: #5b667a;
+      --line: #dfe7f2;
+      --bg: #f5f8fc;
+      --card: #ffffff;
+      --soft-blue: #eaf3ff;
+      --soft-orange: #fff3e8;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at top left, rgba(11, 102, 255, 0.12), rgba(11, 102, 255, 0) 32rem),
+        radial-gradient(circle at top right, rgba(255, 122, 0, 0.12), rgba(255, 122, 0, 0) 30rem),
+        var(--bg);
+      line-height: 1.55;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .wrap {
+      width: min(1120px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    header {
+      padding: 30px 0 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      color: var(--blue);
+      text-decoration: none;
+      font-size: clamp(30px, 4.4vw, 54px);
+      line-height: 1;
+      font-weight: 950;
+      letter-spacing: -0.06em;
+    }
+
+    .brand span span {
+      color: var(--orange);
+      margin-left: 6px;
+    }
+
+    nav {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    nav a,
+    footer a {
+      color: var(--blue-bright);
+      text-decoration: none;
+      font-weight: 800;
+    }
+
+    nav a[aria-current="page"] {
+      color: var(--navy);
+    }
+
+    .hero {
+      margin-top: 24px;
+      background: linear-gradient(135deg, #062b73 0%, #041a47 62%, #031335 100%);
+      color: white;
+      border-radius: 34px;
+      padding: clamp(24px, 4.4vw, 48px);
+      box-shadow: 0 24px 70px rgba(5, 27, 73, 0.26);
+      overflow: hidden;
+      position: relative;
+      display: grid;
+      grid-template-columns: minmax(0, 1.1fr) minmax(280px, 0.9fr);
+      gap: clamp(18px, 3.2vw, 40px);
+      align-items: center;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      right: -130px;
+      bottom: -160px;
+      width: 420px;
+      height: 420px;
+      border: 1px solid rgba(255,255,255,0.16);
+      border-radius: 50%;
+      box-shadow:
+        -34px -34px 0 rgba(255,255,255,0.035),
+        -68px -68px 0 rgba(255,255,255,0.025),
+        -102px -102px 0 rgba(255,255,255,0.018);
+    }
+
+    .hero-copy,
+    .hero-media {
+      position: relative;
+      z-index: 1;
+    }
+
+    h1 {
+      max-width: 760px;
+      font-size: clamp(42px, 7vw, 78px);
+      line-height: 0.96;
+      margin: 0;
+      letter-spacing: -0.065em;
+    }
+
+    h1 .orange {
+      color: var(--orange);
+      white-space: normal;
+    }
+
+    h1 .phrase {
+      display: inline-block;
+      margin-right: 0.18em;
+    }
+
+    .lead {
+      max-width: 730px;
+      font-size: clamp(18px, 2.2vw, 24px);
+      color: rgba(255,255,255,0.82);
+      margin: 16px 0 0;
+    }
+
+    .actions {
+      margin-top: 22px;
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .store-actions {
+      margin-top: 20px;
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .store-actions .button {
+      flex: 1 1 240px;
+    }
+
+    .academy-action {
+      width: 100%;
+      margin-top: 12px;
+      min-height: 52px;
+      padding: 13px 20px;
+      border-radius: 16px;
+      background: rgba(255,255,255,0.06);
+      color: white;
+      border: 1px solid rgba(255,255,255,0.24);
+      box-shadow: none;
+    }
+
+    .academy-action-content {
+      max-width: 100%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
+
+    .academy-action-play {
+      flex: 0 0 auto;
+      font-size: 11px;
+      line-height: 1;
+    }
+
+    .academy-action-text {
+      font-size: 15px;
+      font-weight: 950;
+      letter-spacing: -0.02em;
+      line-height: 1.05;
+      text-align: center;
+    }
+
+    .academy-action:hover {
+      background: rgba(255,255,255,0.1);
+      border-color: rgba(255,255,255,0.36);
+    }
+
+    .academy-action:focus-visible {
+      outline: 3px solid rgba(255,255,255,0.9);
+      outline-offset: 3px;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 46px;
+      padding: 12px 18px;
+      border-radius: 14px;
+      font-weight: 900;
+      text-decoration: none;
+    }
+
+    .button.primary {
+      background: var(--orange);
+      color: white;
+      box-shadow: 0 10px 24px rgba(255, 122, 0, 0.25);
+    }
+
+    .button.disabled {
+      cursor: default;
+      user-select: none;
+    }
+
+    .button.secondary {
+      background: rgba(255,255,255,0.12);
+      color: white;
+      border: 1px solid rgba(255,255,255,0.24);
+    }
+
+    .button.store {
+      min-height: 52px;
+      padding: 13px 20px;
+      border-radius: 16px;
+      border: 1px solid rgba(255,255,255,0.2);
+      background: rgba(255,255,255,0.14);
+      color: white;
+      box-shadow: none;
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+    }
+
+    .button.store.primary {
+      background: linear-gradient(135deg, #ffffff 0%, #f7fbff 100%);
+      color: var(--navy);
+      border-color: rgba(255,255,255,0.55);
+      box-shadow: 0 12px 26px rgba(5, 27, 73, 0.18);
+    }
+
+    .button.store.secondary {
+      background: rgba(255,255,255,0.09);
+      color: white;
+      border-color: rgba(255,255,255,0.24);
+    }
+
+    .button .store-copy {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      line-height: 1.05;
+    }
+
+    .button .store-label {
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      opacity: 0.78;
+    }
+
+    .button .store-name {
+      font-size: 15px;
+      font-weight: 950;
+      letter-spacing: -0.02em;
+      margin-top: 2px;
+    }
+
+    .hero-media {
+      display: grid;
+      place-items: center;
+      transform: translateY(-24px);
+    }
+
+    .app-icon {
+      width: min(250px, 66vw);
+      border-radius: 28%;
+      box-shadow: 0 28px 70px rgba(0,0,0,0.28);
+      transform: rotate(0deg);
+    }
+
+    .section {
+      margin-top: 30px;
+    }
+
+    .section-title {
+      display: block;
+      margin-bottom: 18px;
+    }
+
+    .section-title h2 {
+      margin: 0;
+      font-size: clamp(28px, 4vw, 42px);
+      line-height: 1.05;
+      letter-spacing: -0.04em;
+      color: var(--navy);
+    }
+
+    .section-title p {
+      max-width: 680px;
+      color: var(--muted);
+      margin: 10px 0 0;
+      font-size: 18px;
+    }
+
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .feature {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      padding: 20px;
+      box-shadow: 0 12px 32px rgba(5, 27, 73, 0.055);
+    }
+
+    .feature .icon {
+      width: 46px;
+      height: 46px;
+      display: grid;
+      place-items: center;
+      border-radius: 16px;
+      background: #ffffff;
+      color: var(--blue);
+      font-size: 24px;
+      margin-bottom: 14px;
+      border: 2px solid var(--blue);
+      position: relative;
+    }
+
+    .feature .icon svg {
+      width: 26px;
+      height: 26px;
+      display: block;
+      fill: none;
+      stroke: currentColor;
+      stroke-width: 2.1;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .feature .icon::after {
+      content: "";
+      position: absolute;
+      right: -3px;
+      bottom: -3px;
+      width: 13px;
+      height: 13px;
+      border-radius: 999px;
+      background: var(--orange);
+      border: 3px solid #ffffff;
+    }
+
+    .feature h3 {
+      margin: 0 0 8px;
+      color: var(--blue);
+      font-size: 18px;
+      line-height: 1.15;
+    }
+
+    .feature p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .screens {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 22px;
+    }
+
+    .story-teaser {
+      margin-top: 28px;
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.96), rgba(234, 243, 255, 0.96));
+      border: 1px solid var(--line);
+      border-radius: 26px;
+      padding: clamp(22px, 4vw, 32px);
+      box-shadow: 0 14px 36px rgba(5, 27, 73, 0.06);
+      display: grid;
+      gap: 12px;
+    }
+
+    .story-teaser h2 {
+      margin: 0;
+      color: var(--navy);
+      font-size: clamp(24px, 3.4vw, 34px);
+      letter-spacing: -0.04em;
+    }
+
+    .story-teaser p {
+      margin: 0;
+      max-width: 700px;
+      color: var(--muted);
+      font-size: 17px;
+    }
+
+    .story-teaser .actions {
+      margin-top: 6px;
+    }
+
+    .follow-section {
+      margin-top: 28px;
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.98), rgba(234, 243, 255, 0.94));
+      border: 1px solid var(--line);
+      border-radius: 26px;
+      padding: clamp(22px, 4vw, 32px);
+      box-shadow: 0 14px 36px rgba(5, 27, 73, 0.06);
+      display: grid;
+      gap: 16px;
+      text-align: center;
+    }
+
+    .follow-section h2 {
+      margin: 0;
+      color: var(--navy);
+      font-size: clamp(24px, 3.4vw, 34px);
+      letter-spacing: -0.04em;
+    }
+
+    .follow-section .subtitle {
+      margin: 0;
+      color: var(--muted);
+      font-size: 17px;
+    }
+
+    .follow-section .body {
+      margin: 0 auto;
+      max-width: 760px;
+      color: var(--muted);
+      font-size: 17px;
+    }
+
+    .follow-list {
+      margin: 0 auto;
+      padding: 0;
+      list-style: none;
+      display: grid;
+      gap: 6px;
+      color: var(--muted);
+      font-size: 17px;
+    }
+
+    .follow-list li::before {
+      content: "•";
+      color: var(--orange);
+      font-weight: 900;
+      margin-right: 8px;
+    }
+
+    .social-row {
+      display: flex;
+      justify-content: center;
+      align-items: stretch;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .social-link {
+      width: 110px;
+      min-height: 120px;
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 14px 12px;
+      border-radius: 22px;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,0.9);
+      color: var(--navy);
+      text-decoration: none;
+      box-shadow: 0 10px 24px rgba(5, 27, 73, 0.05);
+      transition: transform 140ms ease, border-color 140ms ease, box-shadow 140ms ease, color 140ms ease, background-color 140ms ease;
+    }
+
+    .social-link:hover,
+    .social-link:focus-visible {
+      transform: translateY(-2px);
+      border-color: rgba(11, 102, 255, 0.34);
+      box-shadow: 0 14px 28px rgba(5, 27, 73, 0.09);
+      color: var(--blue-bright);
+      outline: none;
+    }
+
+    .social-icon {
+      width: 52px;
+      height: 52px;
+      border-radius: 18px;
+      background: linear-gradient(135deg, var(--blue-bright), var(--blue));
+      color: #fff;
+      display: grid;
+      place-items: center;
+      box-shadow: 0 12px 22px rgba(6, 70, 167, 0.18);
+      flex: 0 0 auto;
+      overflow: hidden;
+    }
+
+    .social-icon svg {
+      width: 28px;
+      height: 28px;
+      display: block;
+      fill: currentColor;
+    }
+
+    .social-icon.instagram {
+      background: linear-gradient(135deg, #f58529 0%, #feda77 26%, #dd2a7b 60%, #8134af 100%);
+    }
+
+    .social-icon.youtube {
+      background: #ff0033;
+    }
+
+    .social-icon.facebook {
+      background: #1877f2;
+    }
+
+    .social-icon.x {
+      background: #0f1419;
+    }
+
+    .social-icon.tiktok {
+      background: #111111;
+    }
+
+    .social-name {
+      font-size: 14px;
+      font-weight: 850;
+      letter-spacing: -0.02em;
+    }
+
+    .screen-card {
+      background: #061b48;
+      border-radius: 28px;
+      padding: 14px;
+      box-shadow: 0 16px 44px rgba(5, 27, 73, 0.16);
+      border: 1px solid rgba(6, 70, 167, 0.14);
+    }
+
+    .screen-card img {
+      display: block;
+      width: 100%;
+      border-radius: 16px;
+    }
+
+    .notice {
+      margin-top: 22px;
+      border-left: 5px solid var(--orange);
+      background: #fff7ed;
+      border-radius: 18px;
+      padding: 18px 20px;
+      color: var(--muted);
+      font-size: 16px;
+    }
+
+    .notice strong {
+      color: var(--ink);
+    }
+
+    footer {
+      padding: 34px 0 52px;
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    footer .links {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin: 10px 0;
+    }
+
+    @media (max-width: 940px) {
+      .hero {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-media {
+        justify-content: flex-start;
+        transform: translateY(-10px);
+      }
+
+      .app-icon {
+        width: min(188px, 64vw);
+      }
+
+      .feature-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .screens {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 560px) {
+      .feature-grid,
+      .screens {
+        grid-template-columns: 1fr;
+      }
+
+      .store-actions .button {
+        flex-basis: 100%;
+      }
+
+    }
+
+    a:focus-visible,
+    .social-link:focus-visible {
+      outline: 3px solid var(--orange);
+      outline-offset: 4px;
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .social-link { transition: none; }
+      .social-link:hover, .social-link:focus-visible { transform: none; }
+    }
+    .app-icon, .screen-card img { height: auto; }
+    .screen-card picture { display: block; }
+    .feature h3 a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+    .feature-note { color: var(--muted); font-size: 15px; max-width: 940px; margin: 18px 0 0; }
+    .story-teaser .button.secondary { color: var(--navy); background: var(--soft-blue); border-color: var(--line); }
+
+    .product-hero { grid-template-columns: 1fr; }
+    .product-hero .hero-copy { max-width: 960px; }
+    .product-hero .store-actions { max-width: 620px; }
+    .breadcrumbs { margin: 8px 0 18px; font-size: 15px; }
+    .breadcrumbs ol { display: flex; gap: 10px; flex-wrap: wrap; list-style: none; padding: 0; margin: 0; }
+    .breadcrumbs li + li::before { content: "›"; margin-right: 10px; }
+    .breadcrumbs a, .product-copy a, .product-next a { color: var(--blue); text-underline-offset: 3px; }
+    .product-section { margin-top: 28px; padding: clamp(22px, 4vw, 32px); border-radius: 26px; border: 1px solid var(--line); background: var(--card); box-shadow: 0 12px 32px rgba(5,27,73,.055); display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 330px); gap: 28px; align-items: start; }
+    .product-copy h2, .product-next h2 { font-size: clamp(24px, 3vw, 34px); line-height: 1.15; color: var(--navy); margin: 0 0 14px; letter-spacing: -.03em; }
+    .product-copy h3 { color: var(--blue); font-size: 20px; margin: 26px 0 10px; }
+    .product-copy p, .product-next p { color: var(--muted); font-size: 17px; margin: 0 0 16px; }
+    .product-figure { width: 100%; max-width: 330px; margin: 0 auto; }
+    .product-figure figcaption { color: white; font-size: 14px; margin: 12px 2px 2px; }
+    .product-next { margin-top: 28px; padding: clamp(22px,4vw,32px); border-radius: 26px; background: var(--soft-blue); border: 1px solid var(--line); }
+    .product-next .store-actions { max-width: 620px; }
+    .product-next .button.store.secondary { background: var(--navy); color: white; }
+    @media (max-width: 940px) { .product-section { grid-template-columns: 1fr; } }
+  
+    .fine-print { margin-top: 28px; padding: clamp(22px,4vw,32px); border-radius: 26px; background: var(--card); border: 1px solid var(--line); }
+    .fine-print h2 { font-size: clamp(24px, 3vw, 34px); line-height: 1.15; color: var(--navy); margin: 0 0 14px; letter-spacing: -.03em; }
+    .fine-print p { color: var(--muted); font-size: 17px; margin: 0; }
+  
+    .state-hero h1{margin-bottom:8px}
+    .month-block{margin-top:30px}
+    .show-list{display:grid;gap:10px;margin-top:14px}
+    .show-row{display:flex;gap:16px;align-items:flex-start;background:#fff;border:1px solid var(--line);border-radius:16px;padding:14px 18px}
+    .show-date{font-weight:800;color:var(--navy);white-space:nowrap;min-width:150px}
+    .show-main h3{margin:0;font-size:1.05rem;color:var(--navy)}
+    .show-main p{margin:2px 0 0;color:var(--muted)}
+    .app-line{margin-top:12px;color:var(--muted)}
+    .app-line a{font-weight:700}
+    .states-strip{margin-top:30px;color:var(--muted);line-height:1.9}
+    .states-strip a{font-weight:600}
+    @media (max-width:760px){.show-row{flex-direction:column;gap:4px}.show-date{min-width:0}}
+  </style>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://cardfinderlive.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Card Shows",
+      "item": "https://cardfinderlive.com/card-shows/"
+    }
+  ]
+}
+  </script>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <a class="brand" href="/" aria-label="CardFinder Live home">
+        <span>CardFinder<span>Live</span></span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <a href="/">Home</a>
+        <a href="/find-cards/">Find Cards</a>
+        <a href="/card-shows/">Card Shows</a>
+          <a href="/card-show-calendar/" aria-current="page">Card Show Calendar</a>
+        <a href="/partners/">For Shops &amp; Shows</a>
+        <a href="/our-story/">Our Story</a>
+        <a href="/support/">Support</a>
+      </nav>
+    </header>
+    <main>
+    <nav class="breadcrumbs" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li><a href="/card-show-calendar/">Card Show Calendar</a></li><li aria-current="page">Virginia</li></ol></nav>
+    <section class="hero compact state-hero">
+      <p class="eyebrow">Card show calendar · Virginia</p>
+      <h1>Card shows in Virginia.</h1>
+      <p class="lede">85 upcoming card shows in 27 cities over the next 90 days. The next one is Trading Card Show By Triple Play Cards in Big Stone Gap on Sat, Nov 7. This page has the where and when — in the app, you can see which cards will be at each show and message the seller before you go.</p>
+      <p class="updated-note">List updated November 6, 2026. Shows drop off this list the day they're over. <a href="/card-show-calendar/">See the full national calendar</a></p>
+    </section>
+
+      <section class="month-block" data-month="November 2026">
+        <h2>November 2026</h2>
+        <div class="show-list">
+          <article class="show-row" data-end="2026-11-07">
+            <div class="show-date">Sat, Nov 7</div>
+            <div class="show-main">
+              <h3>Trading Card Show By Triple Play Cards</h3>
+              <p>Carnes Gym · Big Stone Gap, VA · 9 AM–4 PM</p>
+            </div>
+          </article>
+          <article class="show-row" data-end="2026-11-07">
+            <div class="show-date">Sat, Nov 7</div>
+            <div class="show-main">
+              <h3>Fairfax Sports Card, TCG &amp; Collectibles Show</h3>
+              <p>Comfort Inn · Fairfax, VA · 9 AM–3 PM</p>
+            </div>
+          </article>
+          <article class="show-row" data-end="2026-11-07">
+            <div class="show-date">Sat, Nov 7</div>
+            <div class="show-main">
+              <h3>Pokémon &amp; Sports Card Show</h3>
+              <p>Henrico Sports &amp; Event Center · Glen Allen, VA · 10 AM–5 PM</p>
+            </div>
+          </article>
+          <article class="show-row" data-end="2026-11-07">
+            <div class="show-date">Sat, Nov 7</div>
+            <div class="show-main">
+              <h3>1UP Card Show</h3>
+              <p>Hyatt Regency Dulles · Herndon, VA · 10 AM–4 PM</p>
+            </div>
+          </article>
+          <article class="show-row" data-end="2026-11-07">
+            <div class="show-date">Sat, Nov 7</div>
+            <div class="show-main">
+              <h3>MELI ESCO &amp; The Mix</h3>
+              <p>Jimmy&#x27;s Old Town Tavern · Herndon, VA · 1 PM–4 PM</p>
+            </div>
+          </article>
+          <article class="show-row" data-end="2026-11-07">
+            <div class="show-date">Sat, Nov 7</div>
+            <div class="show-main">
+              <h3>NOVA After Hours Card Show</h3>
+              <p>Herndon Park &amp; Recreation Dept. · Herndon, VA · 3 PM–8 PM</p>
+            </div>
+          </article>
+          <article class="show-row" data-end="2026-11-07">
+            <div class="show-date">Sat, Nov 7</div>
+            <div class="show-main">
+              <h3>S&amp;W CardShow</h3>
+              <p>Lignum Ruritan Club · Lignum, VA · 8 AM–4 PM</p>
+            </div>
+          </article>
+          <article class="show-row" data-end="2026-11-07">
+            <div class="show-date">Sat, Nov 7</div>
+            <div class="show-main">
+              <h3>SuperRare Card Show</h3>
+              <p>ODU Chartway Arena · Norfolk, VA · 9 AM–4 PM</p>
+            </div>
+          </article>
+          <article class="show-row" data-end="2026-11-07">
+            <div class="show-date">Sat, Nov 7</div>
+            <div class="show-main">
+              <h3>THE ULTIMATE TOY, DIECAST &amp; Pokemon Card SHOW</h3>
+              <p>Central Church- Radford · Radford, VA · 9 AM–2 PM</p>
+            </div>
+          </article>
+          <article class="show-row" data-end="2026-11-07">
+            <div class="show-date">Sat, Nov 7</div>
+            <div class="show-main">
+              <h3>RVA Expo Regional Card Show</h3>
+              <p>Richmond Raceway Old Dominion Buliding · Richmond, VA · 9 AM–4 PM</p>
+            </div>
+          </article>
+          <article class="show-row" data-end="2026-11-07">
+            <div class="show-date">Sat, Nov 7</div>
+            <div class="show-main">
+              <h3>The Richmond National (Card Show)</h3>
+              <p>Old Dominion Buliding · Richmond, VA · 9 AM–4 PM</p>
+            </div>
+          </article>
+          <article class="show-row" data-end="2026-11-07">
+            <div class="show-date">Sat, Nov 7</div>
+            <div class="show-main">
+              <h3>Tysons Corner Sports Card, Pokémon, TCG &amp; Hobby Event</h3>
+              <p>American Legion Post 180 · Vienna, VA · 12 PM–5 PM</p>
+            </div>
+          </article>
+          <article class="show-row" data-end="2026-11-08">
+            <div class="show-date">Sun, Nov 8</div>
+            <div class="show-main">
+              <h3>Celestial Skies Card Show</h3>
+              <p>Marriott Falls Church · Falls Church, VA · 9 AM–5 PM</p>
+            </div>
+          </article>
+          <article class="show-row" data-end="2026-11-08">
+            <div class="show-date">Sun, Nov 8</div>
+            <div class="show-main">
+              <h3>RVA Expo Regional Card Show</h3>
+              <p>Richmond Raceway Old Dominion Buliding · Richmond, VA · 9 AM–4 PM</p>
+            </div>
+          </article>
+          <article class="show-row" data-end="2026-11-08">
+            <div class="show-date">Sun, Nov 8</div>
+            <div class="show-main">
+              <h3>The Richmond National (Card Show)</h3>
+              <p>Old Dominion Buliding · Richmond, VA · 9 AM–4 PM</p>
+            </div>
+          </article>
+          <article class="show-row" data-end="2026-11-08">
+            <div class="show-date">Sun, Nov 8</div>
+            <div class="show-main">
+              <h3>Fredericksburg Sports Card, Pokemon, &amp; Hobby Event</h3>
+              <p>American Legion Post 320 · Spotsylvania, VA · 9 AM–3 PM</p>
+            </div>
+          </article>
+          <article class="show-row" data-end="2026-11-10">
+            <div class="show-date">Tue, Nov 10</div>
+            <div class="show-main">
+              <h3>Salem Sportscards Tuesday Trade Day</h3>
+              <p>Salem Sportscards · Salem, VA · 4 PM–6 PM</p>
+            </div>
+          </article>
+          <article class="show-row" data-end="2026-11-13">
+            <div class="show-date">Fri, Nov 13</div>
+            <div class="show-main">
+              <h3>Strike Night Pop! Up Show</h3>
+              <p>Uptown Alley · Manassas, VA · 6 PM–11 PM</p>
+            </div>
+          </article>
+          <article class="show-row" data-end="2026-11-14">
+            <div class="show-date">Sat, Nov 14</div>
+            <div class="show-main">
+              <h3>FAIRFAX Sports Card, Pokémon &amp; Collectibles SHOW</h3>
+              <p>Comfort Inn University Center · Fairfax, VA · 9 AM–3 PM</p>
+            </div>
+          </article>
+          <article class="show-row" data-end="2026-11-14">
+            <div class="show-date">Sat, Nov 14</div>
+            <div class="show-main">
+              <h3>Showtime Sportscards 300 Table Mega Show</h3>
+              <p>Fredericksburg Fairgrounds · Fredericksburg, VA · 9 AM–3 PM</p>
+            </div>
+          </article>
+          <article class="show-row" data-end="2026-11-14">
+            <div class="show-date">Sat, Nov 14</div>
+            <div class="show-main">
+              <h3>NerdVana Richmond | Trading Cards, Video Games &amp; Collectibles</h3>
+              <p>Chesterfield Towne Center · Richmond, VA · 11 AM–5 PM</p>
+            </div>
+          </article>
+          <article class="show-row" data-end="2026-11-14">
+            <div class="show-date">Sat, Nov 14</div>
+            <div class="show-main">
+              <h3>Cards, TCG, &amp; Collectibles Show</h3>
+              <p>Tallwood High School Cafeteria · Virginia Beach, VA · 9 AM–4 PM</p>
+            </div>
+          </article>
+          <article class="show-row" data-end="2026-11-14">
+            <div class="show-date">Sat, Nov 14</div>
+            <div class="show-main">
+              <h3>Show of Kings</h3>
+              <p>Jim Barnett Park, War Memorial Building · Winchester, VA · 10 AM–3 PM</p>
+            </div>
+          </article>
+          <article class="show-row" data-end="2026-11-15">
+            <div class="show-date">Sun, Nov 15</div>
+            <div class="show-main">
+              <h3>Lunarian Fall-cation Card Show</h3>
+              <p>Hilton Arlington · Arlington, VA · 10 AM–4 PM</p>
+            </div>
+          </article>
+          <article class="show-row" data-end="2026-11-15">
+            <div class="show-date">Sun, Nov 15</div>
+            <div class="show-main">
+              <h3>NOVA TCG Exchange Cardshow #11</h3>
+              <p>Marriott at Fair Oaks · Fairfax, VA · 10 AM–4 PM</p>
+            </div>
+          </article>
+          <article class="show-row" data-end="2026-11-15">
+            <div class="show-date">Sun, Nov 15</div>
+            <div class="show-main">
+              <h3>Short Pump Sports Card, Pokemon, TCG, &amp; Hobby Event</h3>
+              <p>Drury Plaza Hotel Richmond · Glen Allen, VA · 9 AM–3 PM</p>
+            </div>
+          </article>
+          <article class="show-row" data-end="2026-11-15">
+            <div class="show-date">Sun, Nov 15</div>
+            <div class="show-main">
+              <h3>Dave &amp; Buster&#x27;s Lynnhaven Mall Sports Card, Pokémon, &amp; Hobby Event</h3>
+              <p>Dave &amp; Buster’s 701 Lynnhaven Pkwy · Virginia Beach, VA · 11 AM–5 PM</p>
+            </div>
+          </article>
+          <article class="show-row" data-end="2026-11-17">
+            <div class="show-date">Tue, Nov 17</div>
+            <div class="show-main">
+              <h3>Salem Sportscards Tuesday Trade Day</h3>
+              <p>Salem Sportscards · Salem, VA · 4 PM–6 PM</p>
+            </div>
+          </article>
+          <article class="show-row" data-end="2026-11-21">
+            <div class="show-date">Sat, Nov 21</div>
+            <div class="show-main">
+              <h3>Valley Card Show</h3>
+              <p>Hotel Madison · Harrisonburg, VA · 9 AM–3 PM</p>
+            </div>
+          </article>
+          <article class="show-row" data-end="2026-11-21">
+            <div class="show-date">Sat, Nov 21</div>
+            <div class="show-main">
+              <h3>Pokémon &amp; Sports Card Show</h3>
+              <p>The National Conference Center · Leesburg, VA · 9 AM–3 PM</p>
+            </div>
+          </article>
+          <article class="show-row" data-end="2026-11-21">
+            <div class="show-date">Sat, Nov 21</div>
+            <div class="show-main">
+              <h3>Poke Craft &amp; Card Show</h3>
+              <p>757 Cards &amp; Cabinets · Newport News, VA · 9 AM–5 PM</p>
+            </div>
+          </article>
+          <article class="show-row" data-end="2026-11-21">
+            <div class="show-date">Sat, Nov 21</div>
+            <div class="show-main">
+              <h3>Sports Cards and Collectible Show</h3>
+              <p>Tanglewood Mall · Roanoke, VA · 9 AM–3 PM</p>
+            </div>
+          </article>
+          <article class="show-row" data-end="2026-11-21">
+            <div class="show-date">Sat, Nov 21</div>
+            <div class="show-main">
+              <h3>Capital of Collecting Expo</h3>
+              <p>The St. James Performance Center · Springfield, VA · 10 AM–6 PM</p>
+            </div>
+          </article>
+          <article class="show-row" data-end="2026-11-21">
+            <div class="show-date">Sat, Nov 21</div>
+            <div class="show-main">
+              <h3>KnBs Cards TCG Show</h3>
+              <p>Courthouse Horizons Virginia Beach · Virginia Beach, VA · 9 AM–3 PM</p>
+            </div>
+          </article>
+          <article class="show-row" data-end="2026-11-21">
+            <div class="show-date">Sat, Nov 21</div>
+            <div class="show-main">
+              <h3>SuperRare Card Show</h3>
+              <p>DoubleTree Hotel Virginia Beach · Virginia Beach, VA · 9 AM–4 PM</p>
+            </div>
+          </article>
+          <article class="show-row" data-end="2026-11-22">
+            <div class="show-date">Sun, Nov 22</div>
+            <div class="show-main">
+              <h3>Poke Craft &amp; Card Show</h3>
+              <p>757 Cards &amp; Cabinets · Newport News, VA · 9 AM–4 PM</p>
+            </div>
+          </article>
+          <article class="show-row" data-end="2026-11-22">
+            <div class="show-date">Sun, Nov 22</div>
+            <div class="show-main">
+              <h3>Shiny Card Show</h3>
+              <p>Triple Crossing Brewery · Richmond, VA · 12 PM–6 PM</p>
+            </div>
+          </article>
+          <article class="show-row" data-end="2026-11-22">
+            <div class="show-date">Sun, Nov 22</div>
+            <div class="show-main">
+              <h3>Tandem Takeover TCG Show</h3>
+              <p>The Westin Richmond · Richmond, VA · 9 AM–4 PM</p>
+            </div>
+          </article>
+          <article class="show-row" data-end="2026-11-22">
+            <div class="show-date">Sun, Nov 22</div>
+            <div class="show-main">
+              <h3>Capital of Collecting Expo</h3>
+              <p>The St. James Performance Center · Springfield, VA · 9 AM–5 PM</p>
+            </div>
+          </article>
+          <article class="show-row" data-end="2026-11-24">
+            <div class="show-date">Tue, Nov 24</div>
+            <div class="show-main">
+              <h3>Salem Sportscards Tuesday Trade Day</h3>
+              <p>Salem Sportscards · Salem, VA · 4 PM–6 PM</p>
+            </div>
+          </article>
+          <article class="show-row" data-end="2026-11-27">
+            <div class="show-date">Fri, Nov 27</div>
+            <div class="show-main">
+              <h3>Steppas Exchange</h3>
+              <p>Fairfax Mariott at Fair Oaks · Fairfax, VA · 6 PM–11 PM</p>
+            </div>
+          </article>
+          <article class="show-row" data-end="2026-11-27">
+            <div class="show-date">Fri, Nov 27</div>
+            <div class="show-main">
+              <h3>Black Friday Rivalry Week Show</h3>
+              <p>American Legion Post 3 · Salem, VA · 9 AM–4 PM</p>
+            </div>
+          </article>
+          <article class="show-row" data-end="2026-11-28">
+            <div class="show-date">Sat, Nov 28</div>
+            <div class="show-main">
+              <h3>Otarush Events: Fuyu Fest</h3>
+              <p>Dulles Town Center · Sterling, VA · 11 AM–6 PM</p>
+            </div>
+          </article>
+          <article class="show-row" data-end="2026-11-28">
+            <div class="show-date">Sat, Nov 28</div>
+            <div class="show-main">
+              <h3>Virginia Beach Card Show</h3>
+              <p>Virginia Beach Convention Center · Virginia Beach, VA · 9:30 AM–4:30 PM</p>
+            </div>
+          </article>
+          <article class="show-row" data-end="2026-11-28">
+            <div class="show-date">Sat, Nov 28</div>
+            <div class="show-main">
+              <h3>Pappy&#x27;s Cards &amp; Collectibles Card Show</h3>
+              <p>Millbrook High School Gym · Winchester, VA · 9 AM–4 PM</p>
+            </div>
+          </article>
+          <article class="show-row" data-end="2026-11-29">
+            <div class="show-date">Sun, Nov 29</div>
+            <div class="show-main">
+              <h3>East Coast Pokémon &amp; Sports Card Show</h3>
+              <p>Hyatt Regency Reston · Reston, VA · 10 AM–4 PM</p>
+            </div>
+          </article>
+        </div>
+        <p class="app-line">In the app: see which cards will be at these shows, and message the seller before you go. <a href="/app/">Get the app</a></p>
+      </section>
+      <section class="month-block" data-month="December 2026">
+        <h2>December 2026</h2>
+        <div class="show-list">
+          <article class="show-row" data-end="2026-12-01">
+            <div class="show-date">Tue, Dec 1</div>
+            <div class="show-main">
+              <h3>Salem Sportscards Tuesday Trade Day</h3>
+              <p>Salem Sportscards · Salem, VA · 4 PM–6 PM</p>
+            </div>
+          </article>
+          <article class="show-row" data-end="2026-12-05">
+            <div class="show-date">Sat, Dec 5</div>
+            <div class="show-main">
+              <h3>APEX CARD SHOW-WINTERFEST</h3>
+              <p>The National Conference Center · Leesburg, VA · 9 AM–5 PM</p>
+            </div>
+          </article>
+          <article class="show-row" data-end="2026-12-05">
+            <div class="show-date">Sat, Dec 5</div>
+            <div class="show-main">
+              <h3>Paramount Brothers Super Show</h3>
+              <p>Williamsburg Indoor Sports Complex · Williamsburg, VA · 9 AM–4 PM</p>
+            </div>
+          </article>
+          <article class="show-row" data-end="2026-12-06">
+            <div class="show-date">Sun, Dec 6</div>
+            <div class="show-main">
+              <h3>NOVA TCG Exchange #12</h3>
+              <p>Marriott at Fair Oaks · Fairfax, VA · 10 AM–4 PM</p>
+            </div>
+          </article>
+          <article class="show-row" data-end="2026-12-06">
+            <div class="show-date">Sun, Dec 6</div>
+            <div class="show-main">
+              <h3>Paramount Brothers Super Show</h3>
+              <p>Williamsburg Indoor Sports Complex · Williamsburg, VA · 9 AM–3 PM</p>
+            </div>
+          </article>
+          <article class="show-row" data-end="2026-12-08">
+            <div class="show-date">Tue, Dec 8</div>
+            <div class="show-main">
+              <h3>Salem Sportscards Tuesday Trade Day</h3>
+              <p>Salem Sportscards · Salem, VA · 4 PM–6 PM</p>
+            </div>
+          </article>
+          <article class="show-row" data-end="2026-12-12">
+            <div class="show-date">Sat, Dec 12</div>
+            <div class="show-main">
+              <h3>FAIRFAX Sports Card, Pokémon &amp; Collectibles SHOW</h3>
+              <p>Comfort Inn University Center · Fairfax, VA · 9 AM–3 PM</p>
+            </div>
+          </article>
+          <article class="show-row" data-end="2026-12-12">
+            <div class="show-date">Sat, Dec 12</div>
+            <div class="show-main">
+              <h3>The 703 TCG Show</h3>
+              <p>Village Pickle 1606 Village Market Blvd SE · Leesburg, VA · 9 AM–4 PM</p>
+            </div>
+          </article>
+          <article class="show-row" data-end="2026-12-12">
+            <div class="show-date">Sat, Dec 12</div>
+            <div class="show-main">
+              <h3>Weekend at Witchduck Card Show</h3>
+              <p>Bingo At Witchduck Hall · Virginia Beach, VA · 10 AM–5 PM</p>
+            </div>
+          </article>
+          <article class="show-row" data-end="2026-12-13">
+            <div class="show-date">Sun, Dec 13</div>
+            <div class="show-main">
+              <h3>Weekend at Witchduck Card Show</h3>
+              <p>Bingo At Witchduck Hall · Virginia Beach, VA · 10 AM–4 PM</p>
+            </div>
+          </article>
+          <article class="show-row" data-end="2026-12-15">
+            <div class="show-date">Tue, Dec 15</div>
+            <div class="show-main">
+              <h3>Salem Sportscards Tuesday Trade Day</h3>
+              <p>Salem Sportscards · Salem, VA · 4 PM–6 PM</p>
+            </div>
+          </article>
+          <article class="show-row" data-end="2026-12-19">
+            <div class="show-date">Sat, Dec 19</div>
+            <div class="show-main">
+              <h3>Slide! Card Show: Pokemon, TCG &amp; Sports</h3>
+              <p>Southwest Virginia Higher Education Center · Abingdon, VA · 9 AM–4 PM</p>
+            </div>
+          </article>
+          <article class="show-row" data-end="2026-12-19">
+            <div class="show-date">Sat, Dec 19</div>
+            <div class="show-main">
+              <h3>NOVA After Hours Card Show</h3>
+              <p>Herndon Park &amp; Recreation Dept. · Herndon, VA · 3 PM–8 PM</p>
+            </div>
+          </article>
+          <article class="show-row" data-end="2026-12-19">
+            <div class="show-date">Sat, Dec 19</div>
+            <div class="show-main">
+              <h3>Nova After Hours - December Show</h3>
+              <p>Herndon Community Center · Herndon, VA · 3 PM–8 PM</p>
+            </div>
+          </article>
+          <article class="show-row" data-end="2026-12-19">
+            <div class="show-date">Sat, Dec 19</div>
+            <div class="show-main">
+              <h3>Poke Craft &amp; Card Show</h3>
+              <p>757 Cards &amp; Cabinets · Newport News, VA · 9 AM–5 PM</p>
+            </div>
+          </article>
+          <article class="show-row" data-end="2026-12-19">
+            <div class="show-date">Sat, Dec 19</div>
+            <div class="show-main">
+              <h3>Sports Cards and Collectible Show</h3>
+              <p>Tanglewood Mall · Roanoke, VA · 9 AM–3 PM</p>
+            </div>
+          </article>
+          <article class="show-row" data-end="2026-12-20">
+            <div class="show-date">Sun, Dec 20</div>
+            <div class="show-main">
+              <h3>NOVA TCG Exchange Cardshow #13</h3>
+              <p>Marriott at Fair Oaks · Fairfax, VA · 10 AM–4 PM</p>
+            </div>
+          </article>
+          <article class="show-row" data-end="2026-12-20">
+            <div class="show-date">Sun, Dec 20</div>
+            <div class="show-main">
+              <h3>Poke Craft &amp; Card Show</h3>
+              <p>757 Cards &amp; Cabinets · Newport News, VA · 9 AM–4 PM</p>
+            </div>
+          </article>
+          <article class="show-row" data-end="2026-12-20">
+            <div class="show-date">Sun, Dec 20</div>
+            <div class="show-main">
+              <h3>PokeKon Fest</h3>
+              <p>DoubleTree by Hilton Norfolk Airport · Norfolk, VA · 10 AM–5 PM</p>
+            </div>
+          </article>
+          <article class="show-row" data-end="2026-12-20">
+            <div class="show-date">Sun, Dec 20</div>
+            <div class="show-main">
+              <h3>SuperRare Card Show</h3>
+              <p>DoubleTree Hotel Virginia Beach · Virginia Beach, VA · 9 AM–4 PM</p>
+            </div>
+          </article>
+          <article class="show-row" data-end="2026-12-22">
+            <div class="show-date">Tue, Dec 22</div>
+            <div class="show-main">
+              <h3>Salem Sportscards Tuesday Trade Day</h3>
+              <p>Salem Sportscards · Salem, VA · 4 PM–6 PM</p>
+            </div>
+          </article>
+          <article class="show-row" data-end="2026-12-29">
+            <div class="show-date">Tue, Dec 29</div>
+            <div class="show-main">
+              <h3>Salem Sportscards Tuesday Trade Day</h3>
+              <p>Salem Sportscards · Salem, VA · 4 PM–6 PM</p>
+            </div>
+          </article>
+        </div>
+        <p class="app-line">In the app: see which cards will be at these shows, and message the seller before you go. <a href="/app/">Get the app</a></p>
+      </section>
+      <section class="month-block" data-month="January 2027">
+        <h2>January 2027</h2>
+        <div class="show-list">
+          <article class="show-row" data-end="2027-01-02">
+            <div class="show-date">Sat, Jan 2</div>
+            <div class="show-main">
+              <h3>Weekend at Witchduck Card Show</h3>
+              <p>Bingo At Witchduck Hall · Virginia Beach, VA · 10 AM–5 PM</p>
+            </div>
+          </article>
+          <article class="show-row" data-end="2027-01-03">
+            <div class="show-date">Sun, Jan 3</div>
+            <div class="show-main">
+              <h3>NOVA TCG Exchange Card Show #1</h3>
+              <p>Marriott at Fair Oaks · Fairfax, VA · 10 AM–4 PM</p>
+            </div>
+          </article>
+          <article class="show-row" data-end="2027-01-03">
+            <div class="show-date">Sun, Jan 3</div>
+            <div class="show-main">
+              <h3>Weekend at Witchduck Card Show</h3>
+              <p>Bingo At Witchduck Hall · Virginia Beach, VA · 10 AM–4 PM</p>
+            </div>
+          </article>
+          <article class="show-row" data-end="2027-01-08">
+            <div class="show-date">Fri, Jan 8</div>
+            <div class="show-main">
+              <h3>All American Collectors Expo</h3>
+              <p>Greater Richmond Convention Center · Richmond, VA · 4 PM–8 PM</p>
+            </div>
+          </article>
+          <article class="show-row" data-end="2027-01-09">
+            <div class="show-date">Sat, Jan 9</div>
+            <div class="show-main">
+              <h3>All American Collectors Expo</h3>
+              <p>Greater Richmond Convention Center · Richmond, VA · 10 AM–5 PM</p>
+            </div>
+          </article>
+          <article class="show-row" data-end="2027-01-10">
+            <div class="show-date">Sun, Jan 10</div>
+            <div class="show-main">
+              <h3>All American Collectors Expo</h3>
+              <p>Greater Richmond Convention Center · Richmond, VA · 10 AM–4 PM</p>
+            </div>
+          </article>
+          <article class="show-row" data-end="2027-01-16">
+            <div class="show-date">Sat, Jan 16</div>
+            <div class="show-main">
+              <h3>Card Summit IV-The Frozen Vault</h3>
+              <p>Elks Lodge No 2188 · Fairfax, VA · 9 AM–4 PM</p>
+            </div>
+          </article>
+          <article class="show-row" data-end="2027-01-16">
+            <div class="show-date">Sat, Jan 16</div>
+            <div class="show-main">
+              <h3>Go For Broke Card Show</h3>
+              <p>Hyatt Regency Dulles · Herndon, VA · 4 AM–9 PM</p>
+            </div>
+          </article>
+          <article class="show-row" data-end="2027-01-16">
+            <div class="show-date">Sat, Jan 16</div>
+            <div class="show-main">
+              <h3>Berry Hill Trading Card Expo</h3>
+              <p>Berry Hill Resort · South Boston, VA · 10 AM–5 PM</p>
+            </div>
+          </article>
+          <article class="show-row" data-end="2027-01-23">
+            <div class="show-date">Sat, Jan 23</div>
+            <div class="show-main">
+              <h3>Southwest Virginia Card Show</h3>
+              <p>Southwest Virginia Higher Education Center · Abingdon, VA · 9 AM–4 PM</p>
+            </div>
+          </article>
+          <article class="show-row" data-end="2027-01-24">
+            <div class="show-date">Sun, Jan 24</div>
+            <div class="show-main">
+              <h3>Tandem Takeover TCG Show</h3>
+              <p>The Westin Richmond · Richmond, VA · 9 AM–4 PM</p>
+            </div>
+          </article>
+          <article class="show-row" data-end="2027-01-30">
+            <div class="show-date">Sat, Jan 30</div>
+            <div class="show-main">
+              <h3>Card City Expo</h3>
+              <p>Fredericksburg Convention Center · Fredericksburg, VA · 9 AM–5 PM</p>
+            </div>
+          </article>
+          <article class="show-row" data-end="2027-01-30">
+            <div class="show-date">Sat, Jan 30</div>
+            <div class="show-main">
+              <h3>Poke Craft &amp; Card Show</h3>
+              <p>757 Cards &amp; Cabinets · Newport News, VA · 9 AM–5 PM</p>
+            </div>
+          </article>
+          <article class="show-row" data-end="2027-01-30">
+            <div class="show-date">Sat, Jan 30</div>
+            <div class="show-main">
+              <h3>KnBs Cards TCG &amp; Collectibles Show</h3>
+              <p>Tallwood High School Cafeteria · Virginia Beach, VA · 9 AM–4 PM</p>
+            </div>
+          </article>
+          <article class="show-row" data-end="2027-01-31">
+            <div class="show-date">Sun, Jan 31</div>
+            <div class="show-main">
+              <h3>NOVA TCG Exchange Card Show #2</h3>
+              <p>Marriott at Fair Oaks · Fairfax, VA · 10 AM–4 PM</p>
+            </div>
+          </article>
+          <article class="show-row" data-end="2027-01-31">
+            <div class="show-date">Sun, Jan 31</div>
+            <div class="show-main">
+              <h3>Card City Expo</h3>
+              <p>Fredericksburg Convention Center · Fredericksburg, VA · 9 AM–5 PM</p>
+            </div>
+          </article>
+          <article class="show-row" data-end="2027-01-31">
+            <div class="show-date">Sun, Jan 31</div>
+            <div class="show-main">
+              <h3>Poke Craft &amp; Card Show</h3>
+              <p>757 Cards &amp; Cabinets · Newport News, VA · 9 AM–4 PM</p>
+            </div>
+          </article>
+        </div>
+        <p class="app-line">In the app: see which cards will be at these shows, and message the seller before you go. <a href="/app/">Get the app</a></p>
+      </section>
+
+    <section class="product-next">
+      <h2>See who's bringing what.</h2>
+      <p>The calendar says where and when. The app says which cards will be there — message the seller before the show and make the deal when you walk in.</p>
+      <div class="store-actions" aria-label="Download CardFinder Live">
+        <a class="button store primary" href="https://apps.apple.com/app/cardfinder-live/id6757400880" rel="noopener"><span class="store-copy"><span class="store-label">Download on the</span><span class="store-name">App Store</span></span></a>
+        <a class="button store secondary" href="https://play.google.com/store/apps/details?id=com.cardfinderlive.runner" rel="noopener"><span class="store-copy"><span class="store-label">Get it on</span><span class="store-name">Google Play</span></span></a>
+      </div>
+    </section>
+    <p class="states-strip"><strong>Card shows in other states:</strong> <a href="/card-shows/alabama/">Alabama</a> · <a href="/card-shows/arizona/">Arizona</a> · <a href="/card-shows/arkansas/">Arkansas</a> · <a href="/card-shows/california/">California</a> · <a href="/card-shows/colorado/">Colorado</a> · <a href="/card-shows/connecticut/">Connecticut</a> · <a href="/card-shows/delaware/">Delaware</a> · <a href="/card-shows/florida/">Florida</a> · <a href="/card-shows/georgia/">Georgia</a> · <a href="/card-shows/hawaii/">Hawaii</a> · <a href="/card-shows/idaho/">Idaho</a> · <a href="/card-shows/illinois/">Illinois</a> · <a href="/card-shows/indiana/">Indiana</a> · <a href="/card-shows/iowa/">Iowa</a> · <a href="/card-shows/kansas/">Kansas</a> · <a href="/card-shows/kentucky/">Kentucky</a> · <a href="/card-shows/louisiana/">Louisiana</a> · <a href="/card-shows/maine/">Maine</a> · <a href="/card-shows/maryland/">Maryland</a> · <a href="/card-shows/massachusetts/">Massachusetts</a> · <a href="/card-shows/michigan/">Michigan</a> · <a href="/card-shows/minnesota/">Minnesota</a> · <a href="/card-shows/mississippi/">Mississippi</a> · <a href="/card-shows/missouri/">Missouri</a> · <a href="/card-shows/nebraska/">Nebraska</a> · <a href="/card-shows/nevada/">Nevada</a> · <a href="/card-shows/new-hampshire/">New Hampshire</a> · <a href="/card-shows/new-jersey/">New Jersey</a> · <a href="/card-shows/new-mexico/">New Mexico</a> · <a href="/card-shows/new-york/">New York</a> · <a href="/card-shows/north-carolina/">North Carolina</a> · <a href="/card-shows/ohio/">Ohio</a> · <a href="/card-shows/oklahoma/">Oklahoma</a> · <a href="/card-shows/oregon/">Oregon</a> · <a href="/card-shows/pennsylvania/">Pennsylvania</a> · <a href="/card-shows/rhode-island/">Rhode Island</a> · <a href="/card-shows/south-carolina/">South Carolina</a> · <a href="/card-shows/south-dakota/">South Dakota</a> · <a href="/card-shows/tennessee/">Tennessee</a> · <a href="/card-shows/texas/">Texas</a> · <a href="/card-shows/utah/">Utah</a> · <a href="/card-shows/vermont/">Vermont</a> · <a href="/card-shows/virginia/">Virginia</a> · <a href="/card-shows/washington/">Washington</a> · <a href="/card-shows/west-virginia/">West Virginia</a> · <a href="/card-shows/wisconsin/">Wisconsin</a></p>
+    <script type="application/ld+json">
+{"@context": "https://schema.org", "@graph": [{"@type": "Event", "name": "Trading Card Show By Triple Play Cards", "startDate": "2026-11-07", "endDate": "2026-11-07", "eventStatus": "https://schema.org/EventScheduled", "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode", "location": {"@type": "Place", "name": "Carnes Gym", "address": {"@type": "PostalAddress", "addressLocality": "Big Stone Gap", "addressRegion": "VA", "addressCountry": "US", "streetAddress": "505 E 5th St S", "postalCode": "24219"}}, "url": "https://cardfinderlive.com/card-shows/virginia/"}, {"@type": "Event", "name": "Fairfax Sports Card, TCG & Collectibles Show", "startDate": "2026-11-07", "endDate": "2026-11-07", "eventStatus": "https://schema.org/EventScheduled", "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode", "location": {"@type": "Place", "name": "Comfort Inn", "address": {"@type": "PostalAddress", "addressLocality": "Fairfax", "addressRegion": "VA", "addressCountry": "US", "streetAddress": "11180 Fairfax Blvd", "postalCode": "22030"}}, "url": "https://cardfinderlive.com/card-shows/virginia/"}, {"@type": "Event", "name": "Pokémon & Sports Card Show", "startDate": "2026-11-07", "endDate": "2026-11-07", "eventStatus": "https://schema.org/EventScheduled", "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode", "location": {"@type": "Place", "name": "Henrico Sports & Event Center", "address": {"@type": "PostalAddress", "addressLocality": "Glen Allen", "addressRegion": "VA", "addressCountry": "US", "streetAddress": "1 All Star Boulevard", "postalCode": "23059"}}, "url": "https://cardfinderlive.com/card-shows/virginia/"}, {"@type": "Event", "name": "1UP Card Show", "startDate": "2026-11-07", "endDate": "2026-11-07", "eventStatus": "https://schema.org/EventScheduled", "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode", "location": {"@type": "Place", "name": "Hyatt Regency Dulles", "address": {"@type": "PostalAddress", "addressLocality": "Herndon", "addressRegion": "VA", "addressCountry": "US", "streetAddress": "2300 Dulles Corner Blvd", "postalCode": "20171"}}, "url": "https://cardfinderlive.com/card-shows/virginia/"}, {"@type": "Event", "name": "MELI ESCO & The Mix", "startDate": "2026-11-07", "endDate": "2026-11-07", "eventStatus": "https://schema.org/EventScheduled", "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode", "location": {"@type": "Place", "name": "Jimmy's Old Town Tavern", "address": {"@type": "PostalAddress", "addressLocality": "Herndon", "addressRegion": "VA", "addressCountry": "US", "streetAddress": "697 Spring Street", "postalCode": "20170"}}, "url": "https://cardfinderlive.com/card-shows/virginia/"}, {"@type": "Event", "name": "NOVA After Hours Card Show", "startDate": "2026-11-07", "endDate": "2026-11-07", "eventStatus": "https://schema.org/EventScheduled", "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode", "location": {"@type": "Place", "name": "Herndon Park & Recreation Dept.", "address": {"@type": "PostalAddress", "addressLocality": "Herndon", "addressRegion": "VA", "addressCountry": "US", "streetAddress": "814 Ferndale Ave Gym", "postalCode": "20170"}}, "url": "https://cardfinderlive.com/card-shows/virginia/"}, {"@type": "Event", "name": "Celestial Skies Card Show", "startDate": "2026-11-08", "endDate": "2026-11-08", "eventStatus": "https://schema.org/EventScheduled", "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode", "location": {"@type": "Place", "name": "Marriott Falls Church", "address": {"@type": "PostalAddress", "addressLocality": "Falls Church", "addressRegion": "VA", "addressCountry": "US", "streetAddress": "3111 Fairview Park Dr", "postalCode": "22042"}}, "url": "https://cardfinderlive.com/card-shows/virginia/"}, {"@type": "Event", "name": "RVA Expo Regional Card Show", "startDate": "2026-11-08", "endDate": "2026-11-08", "eventStatus": "https://schema.org/EventScheduled", "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode", "location": {"@type": "Place", "name": "Richmond Raceway Old Dominion Buliding", "address": {"@type": "PostalAddress", "addressLocality": "Richmond", "addressRegion": "VA", "addressCountry": "US", "streetAddress": "600 E Laburnum Ave", "postalCode": "23222"}}, "url": "https://cardfinderlive.com/card-shows/virginia/"}, {"@type": "Event", "name": "The Richmond National (Card Show)", "startDate": "2026-11-08", "endDate": "2026-11-08", "eventStatus": "https://schema.org/EventScheduled", "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode", "location": {"@type": "Place", "name": "Old Dominion Buliding", "address": {"@type": "PostalAddress", "addressLocality": "Richmond", "addressRegion": "VA", "addressCountry": "US", "streetAddress": "600 E Laburnum Ave", "postalCode": "23222"}}, "url": "https://cardfinderlive.com/card-shows/virginia/"}, {"@type": "Event", "name": "Fredericksburg Sports Card, Pokemon, & Hobby Event", "startDate": "2026-11-08", "endDate": "2026-11-08", "eventStatus": "https://schema.org/EventScheduled", "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode", "location": {"@type": "Place", "name": "American Legion Post 320", "address": {"@type": "PostalAddress", "addressLocality": "Spotsylvania", "addressRegion": "VA", "addressCountry": "US", "streetAddress": "8456 Brock Road", "postalCode": "22553"}}, "url": "https://cardfinderlive.com/card-shows/virginia/"}, {"@type": "Event", "name": "Salem Sportscards Tuesday Trade Day", "startDate": "2026-11-10", "endDate": "2026-11-10", "eventStatus": "https://schema.org/EventScheduled", "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode", "location": {"@type": "Place", "name": "Salem Sportscards", "address": {"@type": "PostalAddress", "addressLocality": "Salem", "addressRegion": "VA", "addressCountry": "US", "streetAddress": "120 E Main St", "postalCode": "24153"}}, "url": "https://cardfinderlive.com/card-shows/virginia/"}, {"@type": "Event", "name": "Strike Night Pop! Up Show", "startDate": "2026-11-13", "endDate": "2026-11-13", "eventStatus": "https://schema.org/EventScheduled", "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode", "location": {"@type": "Place", "name": "Uptown Alley", "address": {"@type": "PostalAddress", "addressLocality": "Manassas", "addressRegion": "VA", "addressCountry": "US", "streetAddress": "8300 Sudley Rd", "postalCode": "20104"}}, "url": "https://cardfinderlive.com/card-shows/virginia/"}, {"@type": "Event", "name": "FAIRFAX Sports Card, Pokémon & Collectibles SHOW", "startDate": "2026-11-14", "endDate": "2026-11-14", "eventStatus": "https://schema.org/EventScheduled", "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode", "location": {"@type": "Place", "name": "Comfort Inn University Center", "address": {"@type": "PostalAddress", "addressLocality": "Fairfax", "addressRegion": "VA", "addressCountry": "US", "streetAddress": "11180 Fairfax Blvd.", "postalCode": "22030"}}, "url": "https://cardfinderlive.com/card-shows/virginia/"}, {"@type": "Event", "name": "Showtime Sportscards 300 Table Mega Show", "startDate": "2026-11-14", "endDate": "2026-11-14", "eventStatus": "https://schema.org/EventScheduled", "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode", "location": {"@type": "Place", "name": "Fredericksburg Fairgrounds", "address": {"@type": "PostalAddress", "addressLocality": "Fredericksburg", "addressRegion": "VA", "addressCountry": "US", "streetAddress": "2400 Airport Avenue", "postalCode": "22401"}}, "url": "https://cardfinderlive.com/card-shows/virginia/"}, {"@type": "Event", "name": "NerdVana Richmond | Trading Cards, Video Games & Collectibles", "startDate": "2026-11-14", "endDate": "2026-11-14", "eventStatus": "https://schema.org/EventScheduled", "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode", "location": {"@type": "Place", "name": "Chesterfield Towne Center", "address": {"@type": "PostalAddress", "addressLocality": "Richmond", "addressRegion": "VA", "addressCountry": "US", "streetAddress": "11500 Midlothian Turnpike", "postalCode": "23235"}}, "url": "https://cardfinderlive.com/card-shows/virginia/"}, {"@type": "Event", "name": "Cards, TCG, & Collectibles Show", "startDate": "2026-11-14", "endDate": "2026-11-14", "eventStatus": "https://schema.org/EventScheduled", "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode", "location": {"@type": "Place", "name": "Tallwood High School Cafeteria", "address": {"@type": "PostalAddress", "addressLocality": "Virginia Beach", "addressRegion": "VA", "addressCountry": "US", "streetAddress": "1668 Kempersville Rd", "postalCode": "23464"}}, "url": "https://cardfinderlive.com/card-shows/virginia/"}, {"@type": "Event", "name": "Show of Kings", "startDate": "2026-11-14", "endDate": "2026-11-14", "eventStatus": "https://schema.org/EventScheduled", "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode", "location": {"@type": "Place", "name": "Jim Barnett Park, War Memorial Building", "address": {"@type": "PostalAddress", "addressLocality": "Winchester", "addressRegion": "VA", "addressCountry": "US", "streetAddress": "1001 E Cork St.", "postalCode": "22601"}}, "url": "https://cardfinderlive.com/card-shows/virginia/"}, {"@type": "Event", "name": "Lunarian Fall-cation Card Show", "startDate": "2026-11-15", "endDate": "2026-11-15", "eventStatus": "https://schema.org/EventScheduled", "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode", "location": {"@type": "Place", "name": "Hilton Arlington", "address": {"@type": "PostalAddress", "addressLocality": "Arlington", "addressRegion": "VA", "addressCountry": "US", "streetAddress": "950 N Stafford St", "postalCode": "22203"}}, "url": "https://cardfinderlive.com/card-shows/virginia/"}, {"@type": "Event", "name": "NOVA TCG Exchange Cardshow #11", "startDate": "2026-11-15", "endDate": "2026-11-15", "eventStatus": "https://schema.org/EventScheduled", "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode", "location": {"@type": "Place", "name": "Marriott at Fair Oaks", "address": {"@type": "PostalAddress", "addressLocality": "Fairfax", "addressRegion": "VA", "addressCountry": "US", "streetAddress": "11787 US-50", "postalCode": "22033"}}, "url": "https://cardfinderlive.com/card-shows/virginia/"}, {"@type": "Event", "name": "Short Pump Sports Card, Pokemon, TCG, & Hobby Event", "startDate": "2026-11-15", "endDate": "2026-11-15", "eventStatus": "https://schema.org/EventScheduled", "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode", "location": {"@type": "Place", "name": "Drury Plaza Hotel Richmond", "address": {"@type": "PostalAddress", "addressLocality": "Glen Allen", "addressRegion": "VA", "addressCountry": "US", "streetAddress": "11049 W Broad St", "postalCode": "23060"}}, "url": "https://cardfinderlive.com/card-shows/virginia/"}, {"@type": "Event", "name": "Dave & Buster's Lynnhaven Mall Sports Card, Pokémon, & Hobby Event", "startDate": "2026-11-15", "endDate": "2026-11-15", "eventStatus": "https://schema.org/EventScheduled", "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode", "location": {"@type": "Place", "name": "Dave & Buster’s 701 Lynnhaven Pkwy", "address": {"@type": "PostalAddress", "addressLocality": "Virginia Beach", "addressRegion": "VA", "addressCountry": "US", "streetAddress": "701 Lynnhaven Pkwy Suite G19", "postalCode": "23452"}}, "url": "https://cardfinderlive.com/card-shows/virginia/"}, {"@type": "Event", "name": "Salem Sportscards Tuesday Trade Day", "startDate": "2026-11-17", "endDate": "2026-11-17", "eventStatus": "https://schema.org/EventScheduled", "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode", "location": {"@type": "Place", "name": "Salem Sportscards", "address": {"@type": "PostalAddress", "addressLocality": "Salem", "addressRegion": "VA", "addressCountry": "US", "streetAddress": "120 E Main St", "postalCode": "24153"}}, "url": "https://cardfinderlive.com/card-shows/virginia/"}, {"@type": "Event", "name": "Valley Card Show", "startDate": "2026-11-21", "endDate": "2026-11-21", "eventStatus": "https://schema.org/EventScheduled", "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode", "location": {"@type": "Place", "name": "Hotel Madison", "address": {"@type": "PostalAddress", "addressLocality": "Harrisonburg", "addressRegion": "VA", "addressCountry": "US", "streetAddress": "710 S. Main St", "postalCode": "22801"}}, "url": "https://cardfinderlive.com/card-shows/virginia/"}, {"@type": "Event", "name": "Pokémon & Sports Card Show", "startDate": "2026-11-21", "endDate": "2026-11-21", "eventStatus": "https://schema.org/EventScheduled", "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode", "location": {"@type": "Place", "name": "The National Conference Center", "address": {"@type": "PostalAddress", "addressLocality": "Leesburg", "addressRegion": "VA", "addressCountry": "US", "streetAddress": "18665 Conference Center Dr", "postalCode": "20176"}}, "url": "https://cardfinderlive.com/card-shows/virginia/"}, {"@type": "Event", "name": "Poke Craft & Card Show", "startDate": "2026-11-21", "endDate": "2026-11-21", "eventStatus": "https://schema.org/EventScheduled", "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode", "location": {"@type": "Place", "name": "757 Cards & Cabinets", "address": {"@type": "PostalAddress", "addressLocality": "Newport News", "addressRegion": "VA", "addressCountry": "US", "streetAddress": "6 Elmhurst St", "postalCode": "23603"}}, "url": "https://cardfinderlive.com/card-shows/virginia/"}, {"@type": "Event", "name": "Sports Cards and Collectible Show", "startDate": "2026-11-21", "endDate": "2026-11-21", "eventStatus": "https://schema.org/EventScheduled", "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode", "location": {"@type": "Place", "name": "Tanglewood Mall", "address": {"@type": "PostalAddress", "addressLocality": "Roanoke", "addressRegion": "VA", "addressCountry": "US", "streetAddress": "4420-A Electric Rd", "postalCode": "24018"}}, "url": "https://cardfinderlive.com/card-shows/virginia/"}, {"@type": "Event", "name": "Capital of Collecting Expo", "startDate": "2026-11-21", "endDate": "2026-11-21", "eventStatus": "https://schema.org/EventScheduled", "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode", "location": {"@type": "Place", "name": "The St. James Performance Center", "address": {"@type": "PostalAddress", "addressLocality": "Springfield", "addressRegion": "VA", "addressCountry": "US", "streetAddress": "6805 Industrial Rd", "postalCode": "22151"}}, "url": "https://cardfinderlive.com/card-shows/virginia/"}, {"@type": "Event", "name": "KnBs Cards TCG Show", "startDate": "2026-11-21", "endDate": "2026-11-21", "eventStatus": "https://schema.org/EventScheduled", "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode", "location": {"@type": "Place", "name": "Courthouse Horizons Virginia Beach", "address": {"@type": "PostalAddress", "addressLocality": "Virginia Beach", "addressRegion": "VA", "addressCountry": "US", "streetAddress": "961 South Birdneck Rd", "postalCode": "23451"}}, "url": "https://cardfinderlive.com/card-shows/virginia/"}, {"@type": "Event", "name": "Poke Craft & Card Show", "startDate": "2026-11-22", "endDate": "2026-11-22", "eventStatus": "https://schema.org/EventScheduled", "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode", "location": {"@type": "Place", "name": "757 Cards & Cabinets", "address": {"@type": "PostalAddress", "addressLocality": "Newport News", "addressRegion": "VA", "addressCountry": "US", "streetAddress": "6 Elmhurst St", "postalCode": "23603"}}, "url": "https://cardfinderlive.com/card-shows/virginia/"}, {"@type": "Event", "name": "Shiny Card Show", "startDate": "2026-11-22", "endDate": "2026-11-22", "eventStatus": "https://schema.org/EventScheduled", "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode", "location": {"@type": "Place", "name": "Triple Crossing Brewery", "address": {"@type": "PostalAddress", "addressLocality": "Richmond", "addressRegion": "VA", "addressCountry": "US", "streetAddress": "5203 Hatcher St", "postalCode": "23231"}}, "url": "https://cardfinderlive.com/card-shows/virginia/"}, {"@type": "Event", "name": "Tandem Takeover TCG Show", "startDate": "2026-11-22", "endDate": "2026-11-22", "eventStatus": "https://schema.org/EventScheduled", "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode", "location": {"@type": "Place", "name": "The Westin Richmond", "address": {"@type": "PostalAddress", "addressLocality": "Richmond", "addressRegion": "VA", "addressCountry": "US", "streetAddress": "6631 W Broad St", "postalCode": "23230"}}, "url": "https://cardfinderlive.com/card-shows/virginia/"}, {"@type": "Event", "name": "Capital of Collecting Expo", "startDate": "2026-11-22", "endDate": "2026-11-22", "eventStatus": "https://schema.org/EventScheduled", "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode", "location": {"@type": "Place", "name": "The St. James Performance Center", "address": {"@type": "PostalAddress", "addressLocality": "Springfield", "addressRegion": "VA", "addressCountry": "US", "streetAddress": "6805 Industrial Rd", "postalCode": "22151"}}, "url": "https://cardfinderlive.com/card-shows/virginia/"}, {"@type": "Event", "name": "Salem Sportscards Tuesday Trade Day", "startDate": "2026-11-24", "endDate": "2026-11-24", "eventStatus": "https://schema.org/EventScheduled", "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode", "location": {"@type": "Place", "name": "Salem Sportscards", "address": {"@type": "PostalAddress", "addressLocality": "Salem", "addressRegion": "VA", "addressCountry": "US", "streetAddress": "120 E Main St", "postalCode": "24153"}}, "url": "https://cardfinderlive.com/card-shows/virginia/"}, {"@type": "Event", "name": "Steppas Exchange", "startDate": "2026-11-27", "endDate": "2026-11-27", "eventStatus": "https://schema.org/EventScheduled", "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode", "location": {"@type": "Place", "name": "Fairfax Mariott at Fair Oaks", "address": {"@type": "PostalAddress", "addressLocality": "Fairfax", "addressRegion": "VA", "addressCountry": "US", "streetAddress": "11787 US-50", "postalCode": "22033"}}, "url": "https://cardfinderlive.com/card-shows/virginia/"}, {"@type": "Event", "name": "Black Friday Rivalry Week Show", "startDate": "2026-11-27", "endDate": "2026-11-27", "eventStatus": "https://schema.org/EventScheduled", "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode", "location": {"@type": "Place", "name": "American Legion Post 3", "address": {"@type": "PostalAddress", "addressLocality": "Salem", "addressRegion": "VA", "addressCountry": "US", "streetAddress": "710 Apperson Dr", "postalCode": "24153"}}, "url": "https://cardfinderlive.com/card-shows/virginia/"}]}
+    </script>
+    <script>
+      (function () {
+        var now = new Date();
+        var todayStr = now.getFullYear() + '-' + String(now.getMonth() + 1).padStart(2, '0') + '-' + String(now.getDate()).padStart(2, '0');
+        document.querySelectorAll('.show-row').forEach(function (row) {
+          if (row.getAttribute('data-end') < todayStr) row.style.display = 'none';
+        });
+        document.querySelectorAll('.month-block').forEach(function (block) {
+          var any = Array.prototype.some.call(block.querySelectorAll('.show-row'), function (r) { return r.style.display !== 'none'; });
+          block.style.display = any ? '' : 'none';
+        });
+      })();
+    </script>
+    </main>
+    <footer>
+      <div class="links">
+        <a href="/find-cards/">Find Cards</a>
+        <a href="/card-shows/">Card Shows</a>
+        <a href="/our-story/">Our Story</a>
+        <a href="/support/">Support</a>
+        <a href="https://youtube.com/playlist?list=PLBURvTkWW9UY" target="_blank" rel="noopener noreferrer">Academy</a>
+        <a href="/privacy/">Privacy</a>
+        <a href="/terms/">Terms</a>
+        <a href="mailto:support@cardfinderlive.com">support@cardfinderlive.com</a>
+      </div>
+      <div>© 2026 CardFinder Live</div>
+    </footer>
+  </div>
+<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "7a804480b1bb4df3acd33749e4597dc6"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>
