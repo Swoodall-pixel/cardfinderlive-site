@@ -687,6 +687,14 @@
     .text-block p { color: var(--muted); font-size: 18px; margin: 0 0 14px; }
     .demo-card { max-width: 340px; margin: 20px 0 22px; }
     .demo-card video { display: block; width: 100%; border-radius: 16px; background: #000; aspect-ratio: 9 / 16; }
+    .jump-row { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 20px; }
+    .jump-pill { display: inline-block; padding: 10px 18px; border: 1.5px solid var(--line); border-radius: 999px; background: #fff; color: var(--navy); font-weight: 800; font-size: 16px; text-decoration: none; }
+    .jump-pill:hover { border-color: var(--navy); }
+    section[id] { scroll-margin-top: 18px; }
+    .screen-pair { display: flex; gap: 22px; align-items: flex-start; }
+    .pair-col { flex: 1 1 0; min-width: 0; }
+    .pair-col .demo-card { margin-top: 14px; }
+    @media (max-width: 760px) { .screen-pair { flex-direction: column; } }
   </style>
   <script type="application/ld+json">
 {
@@ -731,6 +739,10 @@
         <div class="hero-copy">
           <h1>Shops and shows: you're already in.</h1>
           <p class="lead">Collectors use CardFinder Live to find cards, shows, and shops — 3,000+ shows and thousands of shops are listed in the app. If you run one of them, there's a free account waiting for you.</p>
+          <div class="jump-row">
+            <a class="jump-pill" href="#for-shops">I run a card shop ↓</a>
+            <a class="jump-pill" href="#for-shows">I host a card show ↓</a>
+          </div>
           <div class="store-actions" aria-label="Download CardFinder Live">
             <a class="button store primary" href="https://apps.apple.com/app/cardfinder-live/id6757400880" rel="noopener">
               <span class="store-copy">
@@ -751,7 +763,7 @@
         <h2>See yourself the way collectors do</h2>
         <p>Download the app and look up your shop or your show. That listing — your name, your address, your hours — is what a collector sees when they're deciding where to go this weekend.</p>
       </section>
-      <section class="text-block">
+      <section class="text-block" id="for-shops">
         <h2>If you run a card shop</h2>
         <p>Your listing is already live. We built it from public listings and went through them one by one to clean them up — but nobody knows your shop like you do.</p>
         <p>Claim it, and two things happen. Your shop's card in the app flips to <strong>Verified</strong>, so collectors know the listing is really yours. And you can put your own cards in the app, as the store — a collector searching for a card finds yours, sees it's sitting in your shop, and comes in to get it. More traffic through your door is the whole idea.</p>
@@ -761,17 +773,23 @@
       </section>
       <section class="text-block">
         <h2>Here's a real shop's page today</h2>
-        <p>Start on the home screen. A collector near you sees the closest shows and the closest shops first — and your shop is already in that row. This is a real one: The Uncommons TCG, in New York.</p>
-        <div class="screen-card demo-card">
-          <img src="/assets/partners/finder-home.jpg" alt="The CardFinder Live home screen. Under 'Card Shops Near Me,' The Uncommons TCG is the first shop in the row." loading="lazy">
-        </div>
-        <p>Tap it, and this is the shop's page — the address, how far away it is, and one tap to call, get directions, open the website, or find it on social. That's already live for every listed shop, and it's free.</p>
-        <div class="screen-card demo-card">
-          <img src="/assets/partners/shop-page-uncommons.jpg" alt="The Uncommons TCG's page in the CardFinder Live app. It says 'Not yet verified' and the inventory section is empty." loading="lazy">
+        <div class="screen-pair">
+          <div class="pair-col">
+            <p>Start on the home screen. A collector near you sees the closest shows and the closest shops first — and your shop is already in that row. This is a real one: The Uncommons TCG, in New York.</p>
+            <div class="screen-card demo-card">
+              <img src="/assets/partners/finder-home.jpg" alt="The CardFinder Live home screen. Under 'Card Shops Near Me,' The Uncommons TCG is the first shop in the row." loading="lazy">
+            </div>
+          </div>
+          <div class="pair-col">
+            <p>Tap it, and this is the shop's page — the address, how far away it is, and one tap to call, get directions, open the website, or find it on social. That's already live for every listed shop, and it's free.</p>
+            <div class="screen-card demo-card">
+              <img src="/assets/partners/shop-page-uncommons.jpg" alt="The Uncommons TCG's page in the CardFinder Live app. It says 'Not yet verified' and the inventory section is empty." loading="lazy">
+            </div>
+          </div>
         </div>
         <p>Now look at the two things that are waiting. The page says "Not yet verified." And under "Inventory on CardFinder Live," the shelf is empty. Claim your shop — free — and both change: your page shows it's Verified with CardFinder Live, and the cards you tie to your shop fill that shelf, where collectors can find them.</p>
       </section>
-      <section class="text-block">
+      <section class="text-block" id="for-shows">
         <h2>If you host a card show</h2>
         <p>Collectors find your show two ways: the closest shows to home, and Plan a Trip when they're traveling — tell the app where you're going and it shows the shows there. Then the cards do the selling. A collector on his couch scrolls what's coming to your show, spots one he wants, messages the dealer, and makes a deal — now he's coming, when he wasn't before. One more person through your door, before your doors even open.</p>
         <div class="screen-card demo-card">
