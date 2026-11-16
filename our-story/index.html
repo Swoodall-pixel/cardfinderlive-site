@@ -380,6 +380,23 @@
       margin: 28px 0 0;
     }
 
+    .story-pair {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+      margin: 28px 0 0;
+    }
+
+    .story-pair .story-photo {
+      margin: 0;
+    }
+
+    @media (max-width: 560px) {
+      .story-pair {
+        grid-template-columns: 1fr;
+      }
+    }
+
     .story-photo img {
       width: 100%;
       height: auto;
@@ -439,6 +456,17 @@
             even looking for—that feeling never gets old.
           </p>
         </article>
+
+        <div class="story-pair">
+          <figure class="story-photo">
+            <img src="/assets/story/steven-first-card-show.jpg" alt="A young Steven at a card show table in junior high, binders of trading cards open in front of him." width="1200" height="1600" loading="lazy" decoding="async" />
+            <figcaption>Where it started — me at a card show table in junior high.</figcaption>
+          </figure>
+          <figure class="story-photo">
+            <img src="/assets/story/steven-card-show-today.jpg" alt="Steven today at his table at a card show, display cases of cards in front of him, arms raised under a basketball hoop." width="1200" height="1600" loading="lazy" decoding="async" />
+            <figcaption>Same thing, a few decades later — still set up at the show.</figcaption>
+          </figure>
+        </div>
 
         <article class="section-card">
           <h2>The Moment Everything Clicked</h2>
